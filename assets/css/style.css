@@ -1,0 +1,56 @@
+:root{--paper:#f3e9d2;--paper2:#ebdfc2;--green:#1f4d3a;--gold:#c9a24b;--wine:#7a1f2b;--ink:#2b2a22}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.55 'Cormorant Garamond',Georgia,serif;overflow-x:hidden}
+body.lock{overflow:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,.btn,.card__tag,.top__brand,.filtros button{font-family:Cinzel,serif}
+h1,h2{color:var(--green);text-align:center;font-weight:600;margin:0 0 1rem}
+h2{font-size:1.5rem}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.6rem 16px;background:var(--green);color:var(--paper);position:sticky;top:0;z-index:5}
+.top__brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-size:1rem}
+.top nav{display:flex;gap:1rem;font-family:Cinzel,serif;font-size:.85rem}
+.top nav a{text-decoration:none;color:var(--gold)}
+.hero{text-align:center;padding:2.5rem 16px 3rem;background:radial-gradient(circle at 50% 30%,#fbf5e4,var(--paper))}
+.hero__logo{width:min(420px,90%);margin:0 auto}
+.hero__lead{font-style:italic;font-size:1.3rem;color:var(--green);margin:1rem 0 1.5rem}
+.btn{display:inline-block;background:var(--green);color:var(--paper);border:1px solid var(--gold);padding:.7rem 1.6rem;text-decoration:none;cursor:pointer;font-size:.9rem;letter-spacing:.06em}
+.btn:hover{background:var(--wine)}
+.sec{max-width:1100px;margin:0 auto;padding:2.5rem 16px}
+.sec--narrow{max-width:680px;text-align:center}
+.sec--photo{padding-top:0}
+.sec--photo img{margin:0 auto;max-height:520px;width:auto;border:1px solid var(--gold)}
+.ornament{color:var(--gold);letter-spacing:.5em;margin-top:1rem}
+.cats,.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.cat{display:flex;flex-direction:column;gap:.3rem;padding:1.2rem;border:1px solid var(--gold);background:var(--paper2);text-decoration:none}
+.cat__name{font-family:Cinzel,serif;color:var(--green);font-weight:600}
+.cat:hover{background:#e3d5b0}
+.filtros{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-bottom:1.5rem}
+.filtros button{background:none;border:1px solid var(--gold);color:var(--green);padding:.4rem .9rem;cursor:pointer;font-size:.8rem}
+.filtros button[aria-pressed=true]{background:var(--green);color:var(--paper)}
+.card{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--gold);background:var(--paper2);cursor:pointer;font:inherit;color:inherit}
+.card:hover{box-shadow:0 4px 14px #0003}
+.card__img{aspect-ratio:1;overflow:hidden;background:#e3d5b0;display:grid;place-items:center}
+.card__img img{width:100%;height:100%;object-fit:cover}
+.card__moon{font-size:3rem;color:var(--gold)}
+.card--breve{opacity:.65;cursor:default}
+.card__body{display:flex;flex-direction:column;gap:.2rem;padding:.8rem}
+.card__tag{font-size:.65rem;letter-spacing:.08em;color:var(--wine);text-transform:uppercase}
+.card__name{font-size:1.15rem;font-weight:600;color:var(--green);line-height:1.2}
+.card__price{color:var(--ink)}
+.modal{position:fixed;inset:0;background:#000a;z-index:10;display:grid;place-items:center;padding:12px}
+.modal[hidden]{display:none}
+.modal__box{position:relative;background:var(--paper);max-width:860px;width:100%;max-height:92vh;overflow:auto;border:1px solid var(--gold)}
+.modal__close{position:absolute;top:6px;right:10px;font-size:2rem;background:none;border:0;cursor:pointer;color:var(--green);z-index:1;line-height:1}
+.modal__content{display:grid;grid-template-columns:1fr}
+.modal__content img{width:100%}
+.modal__text{padding:1.2rem}
+.modal__text h2{text-align:left}
+.modal__text h3{font-size:.85rem;margin:1rem 0 .2rem;color:var(--wine)}
+.modal__text p{margin:.2rem 0}
+.price{font-size:1.4rem;color:var(--green);font-weight:600;margin:1rem 0 !important}
+.proto{font-style:italic;color:var(--wine);margin-top:.6rem !important}
+.foot{text-align:center;background:var(--green);color:var(--paper);padding:2rem 16px}
+.foot img{margin:0 auto 1rem;background:var(--paper);padding:6px}
+.foot__small{font-size:.8rem;opacity:.75}
+@media(min-width:720px){.modal__content{grid-template-columns:1fr 1fr}}
