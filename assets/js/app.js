@@ -1,5 +1,24 @@
 (function () {
   const $ = (s, el = document) => el.querySelector(s);
+
+  // Tema claro/escuro (lembra a escolha; sem preferência, segue o sistema)
+  const root = document.documentElement;
+  const nav = $('.top nav');
+  if (nav) {
+    const btn = document.createElement('button');
+    btn.className = 'theme'; btn.type = 'button';
+    const sync = () => {
+      const dark = root.dataset.theme === 'dark';
+      btn.textContent = dark ? '☀' : '☾';
+      btn.setAttribute('aria-label', dark ? 'Mudar para versão clara' : 'Mudar para versão escura');
+    };
+    btn.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('tema', root.dataset.theme); } catch (e) {}
+      sync();
+    });
+    nav.append(btn); sync();
+  }
   const IMG = 'assets/img/';
 
   function card(p) {
