@@ -61,3 +61,4 @@ a{color:inherit}
 :root[data-theme=dark] .modal__box{background:var(--paper2)}
 :root[data-theme=dark] .card,:root[data-theme=dark] .cat{border-color:#7d6630}
 :root[data-theme=dark] .hero__logo{border:1px solid var(--gold);border-radius:12px;box-shadow:0 0 40px #c9a24b33}
+@media(max-width:480px){.top__brand{white-space:nowrap;font-size:.85rem}.top nav{gap:.6rem;font-size:.75rem}}
