@@ -3,105 +3,101 @@
 <head>
 <meta charset="utf-8">
 <title>Proposta Portal da Deusa</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;600;700&display=swap">
 <style>
-/* Identidade do estúdio (provisório: Ateliê Trama): terracota, argila e oliva, formas orgânicas e letra grande.
+/* Identidade do estúdio: tecnologia e marketing digital. Azul-petróleo e coral, formas geométricas e letra grande.
    A paleta da cliente (verde, dourado, rubi) aparece só no estudo de cores e nas artes dela. */
-:root{--bg:#fbf5ea;--sand:#f1e3cd;--sand2:#e7d2b2;--terra:#b4532d;--terra-d:#8f3f20;--olive:#5e6b3f;--ink:#33241b;--soft:#5b4a3e;--line:#d9c3a1}
+:root{--bg:#f6f8f8;--sand:#e9efef;--sand2:#d6e3e5;--terra:#ee6c4d;--terra-d:#b8432a;--olive:#0f4c5c;--ink:#1d2b30;--soft:#46595f;--line:#c5d6d9}
 @page{size:210mm 297mm;margin:0}
 *{box-sizing:border-box}
 html,body{margin:0}
-body{font:400 17.5px/1.5 'Nunito Sans',system-ui,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-h1,h2,h3,.fr{font-family:Fraunces,Georgia,serif;font-weight:700;color:var(--ink);margin:0;letter-spacing:-.01em}
+body{font:400 17px/1.5 Inter,system-ui,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3,.fr{font-family:Sora,Georgia,serif;font-weight:700;color:var(--ink);margin:0;letter-spacing:-.01em}
 .page{width:794px;height:1123px;position:relative;overflow:hidden;background:var(--bg);padding:70px 60px 0;page-break-after:always;break-after:page}
 .page:last-child{page-break-after:auto;break-after:auto}
-.blob{position:absolute;border-radius:58% 42% 55% 45% / 48% 56% 44% 52%}
-.top{position:absolute;left:60px;right:60px;top:26px;display:flex;justify-content:space-between;align-items:center;font:700 12.5px 'Nunito Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--terra-d)}
+.top{position:absolute;left:60px;right:60px;top:26px;display:flex;justify-content:space-between;align-items:center;font:700 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-d)}
 .top .brand{display:flex;align-items:center;gap:8px}
-.foot{position:absolute;left:60px;right:60px;bottom:28px;display:flex;justify-content:space-between;font:600 13px 'Nunito Sans';color:var(--soft);border-top:1.5px solid var(--line);padding-top:10px}
-h2.t{font-size:38px;line-height:1.1;margin-top:10px}
+.foot{position:absolute;left:60px;right:60px;bottom:28px;display:flex;justify-content:space-between;font:600 13px Inter;color:var(--soft);border-top:1.5px solid var(--line);padding-top:10px}
+h2.t{font-size:34px;line-height:1.1;margin-top:10px}
 .lead{font-size:19px;color:var(--soft);margin:8px 0 0;max-width:640px}
-.wave{display:block;margin:12px 0 0}
-.card{background:var(--sand);border-radius:28px;padding:24px 28px}
+.card{background:var(--sand);border-radius:16px;padding:24px 28px}
 .card h3{font-size:21px;margin-bottom:6px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .list{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
 .list li{padding-left:22px;position:relative}
-.list li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50% 40% 55% 45%;background:var(--terra)}
+.list li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--terra)}
 b,strong{font-weight:700}
 .shot{position:relative;width:372px;flex:none}
-.shot img{width:100%;display:block;border-radius:20px;box-shadow:0 0 0 2px var(--line)}
-.n{position:absolute;right:-14px;width:30px;height:30px;border-radius:50%;background:var(--terra);color:#fff;font:700 15px 'Nunito Sans';display:grid;place-items:center;box-shadow:0 0 0 3px var(--bg)}
+.shot img{width:100%;display:block;border-radius:14px;box-shadow:0 0 0 2px var(--line)}
+.n{position:absolute;right:-14px;width:30px;height:30px;border-radius:50%;background:var(--terra-d);color:#fff;font:700 15px Inter;display:grid;place-items:center;box-shadow:0 0 0 3px var(--bg)}
 .zone{position:absolute;left:0;right:0;border:2.5px solid var(--terra);border-radius:10px}
 .legend{display:flex;flex-direction:column;gap:14px;flex:1;min-width:0}
 .legend>div{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:16px;line-height:1.4}
 .legend .n{position:static;box-shadow:none}
 .sw{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}
-.sw div{border-radius:26px 26px 26px 8px;height:150px;padding:14px;display:flex;flex-direction:column;justify-content:flex-end;font:700 15px/1.25 'Nunito Sans';box-shadow:inset 0 0 0 1.5px #0002}
-.sw small{font:600 13.5px 'Nunito Sans';opacity:.95;margin-top:3px}
+.sw div{border-radius:14px;height:150px;padding:14px;display:flex;flex-direction:column;justify-content:flex-end;font:700 15px/1.25 Inter;box-shadow:inset 0 0 0 1.5px #0002}
+.sw small{font:600 13.5px Inter;opacity:.95;margin-top:3px}
 .week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:14px}
-.week div{background:var(--sand);border-radius:20px;padding:12px 4px;text-align:center;font-size:15px;line-height:1.25}
-.week b{display:block;font:700 12.5px 'Nunito Sans';letter-spacing:.1em;color:var(--terra-d);margin-bottom:4px}
+.week div{background:var(--sand);border-radius:12px;padding:12px 4px;text-align:center;font-size:15px;line-height:1.25}
+.week b{display:block;font:700 12.5px Inter;letter-spacing:.1em;color:var(--terra-d);margin-bottom:4px}
 .week i{display:block;font-style:normal;color:var(--soft);font-size:13.5px;margin-top:3px}
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
-.plan{background:var(--sand);border-radius:34px;padding:30px 22px 22px;display:flex;flex-direction:column;height:700px;position:relative}
-.plan.hl{background:var(--terra);color:#fff7ee}
-.plan.hl h3,.plan.hl .pr{color:#fff7ee}
+.plan{background:var(--sand);border-radius:20px;padding:30px 22px 22px;display:flex;flex-direction:column;height:700px;position:relative}
+.plan.hl{background:var(--olive);color:#fff}
+.plan.hl h3,.plan.hl .pr{color:#fff}
 .plan h3{font-size:25px;margin-bottom:4px}
 .plan .for{font-size:15px;color:var(--soft);margin-bottom:16px}
-.plan.hl .for{color:#ffe7d2}
+.plan.hl .for{color:#cfe3e6}
 .plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:17px;line-height:1.35}
 .plan li{padding-left:24px;position:relative}
-.plan li:before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--terra)}
-.plan.hl li:before{color:#ffd9b8}
-.pr{margin-top:auto;border-top:2px solid var(--line);padding-top:14px;font:700 36px Fraunces,serif;color:var(--terra-d)}
+.plan li:before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--terra-d)}
+.plan.hl li:before{color:#ff9d84}
+.pr{margin-top:auto;border-top:2px solid var(--line);padding-top:14px;font:700 36px Sora,serif;color:var(--terra-d)}
 .plan.hl .pr{border-color:#ffffff66}
-.pr small{display:block;font:600 14px 'Nunito Sans';letter-spacing:.08em;opacity:.85}
-.badge{position:absolute;top:-14px;left:22px;background:var(--olive);color:#fff;font:700 12.5px 'Nunito Sans';letter-spacing:.1em;padding:6px 14px;border-radius:999px}
+.pr small{display:block;font:600 14px Inter;letter-spacing:.08em;opacity:.85}
+.badge{position:absolute;top:-14px;left:22px;background:var(--terra);color:var(--ink);font:700 12.5px Inter;letter-spacing:.1em;padding:6px 12px;border-radius:6px}
 table{width:100%;border-collapse:collapse;font-size:17.5px}
 td{padding:11px 0;border-bottom:1.5px dashed var(--line);vertical-align:top}
 tr:last-child td{border-bottom:0}
-td:last-child{text-align:right;font:700 20px Fraunces,serif;color:var(--terra-d);white-space:nowrap;padding-left:16px}
-td small{display:block;font:400 15px/1.35 'Nunito Sans';color:var(--soft);margin-top:2px}
-td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
+td:last-child{text-align:right;font:700 20px Sora,serif;color:var(--terra-d);white-space:nowrap;padding-left:16px}
+td small{display:block;font:400 15px/1.35 Inter;color:var(--soft);margin-top:2px}
+td:last-child small{font:600 13px Inter;text-align:right}
 .note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:7px;font-size:16.5px;line-height:1.4}
 .src{font-size:14px;line-height:1.45;color:var(--soft)}
-.devs img{display:block;border-radius:18px;box-shadow:0 0 0 2px var(--line)}
+.devs img{display:block;border-radius:12px;box-shadow:0 0 0 2px var(--line)}
 </style>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute"><defs>
-  <symbol id="mark" viewBox="0 0 40 40"><path d="M7 36V19C7 9 13 4 20 4s13 5 13 15v17" fill="none" stroke="#b4532d" stroke-width="3.2" stroke-linecap="round"/><path d="M7 16c6 4 8-4 13 0s8 4 13 0M7 23c6 4 8-4 13 0s8 4 13 0M7 30c6 4 8-4 13 0s8 4 13 0" fill="none" stroke="#5e6b3f" stroke-width="2.4" stroke-linecap="round"/></symbol>
-  <symbol id="wv" viewBox="0 0 120 10"><path d="M2 5c8-6 12 6 20 0s12 6 20 0 12 6 20 0 12 6 20 0 12 6 20 0" fill="none" stroke="#b4532d" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="mark" viewBox="0 0 40 40"><path d="M7 8L20 33L33 8" fill="none" stroke="#0f4c5c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="4" width="8" height="8" rx="1.5" fill="#fff" stroke="#0f4c5c" stroke-width="2.4"/><rect x="29" y="4" width="8" height="8" rx="1.5" fill="#fff" stroke="#0f4c5c" stroke-width="2.4"/><circle cx="20" cy="33" r="4.6" fill="#ee6c4d"/></symbol>
 </defs></svg>
 
 <!-- 1. CAPA -->
-<section class="page" style="padding:0;background:var(--sand)">
-  <div class="blob" style="width:560px;height:520px;right:-170px;top:-130px;background:var(--terra)"></div>
-  <div class="blob" style="width:380px;height:340px;right:-60px;top:70px;background:#d98a5f;opacity:.85"></div>
-  <div class="blob" style="width:300px;height:250px;left:-150px;bottom:-120px;background:var(--olive);opacity:.9"></div>
+<section class="page" style="padding:0;background:var(--bg)">
+  <div style="position:absolute;right:0;top:0;width:300px;height:430px;background:var(--olive);border-bottom-left-radius:16px"></div>
+  <svg style="position:absolute;right:20px;top:40px" width="270" height="330" viewBox="0 0 270 330"><path d="M108 64L196 196L64 196L240 240" fill="none" stroke="#ee6c4d" stroke-width="2" opacity=".9"/><circle cx="20" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="196" r="5" fill="#ee6c4d" opacity="1"/><circle cx="64" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="64" r="5" fill="#ee6c4d" opacity="1"/><circle cx="108" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="152" r="5" fill="#ee6c4d" opacity="1"/><circle cx="196" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="240" r="5" fill="#ee6c4d" opacity="1"/><circle cx="240" cy="284" r="3" fill="#ffffff" opacity="0.55"/></svg>
+  <div style="position:absolute;left:0;bottom:0;width:100%;height:14px;background:var(--olive)"></div>
   <div style="position:absolute;left:70px;top:70px;display:flex;align-items:center;gap:12px">
     <svg width="54" height="54"><use href="#mark"/></svg>
-    <div><div class="fr" style="font-size:26px;line-height:1">Ateliê Trama</div><div style="font:700 12px 'Nunito Sans';letter-spacing:.16em;color:var(--terra-d);margin-top:4px">MARCA · SITE · REDES SOCIAIS</div></div>
+    <div><div class="fr" style="font-size:26px;line-height:1">Vetor</div><div style="font:700 12px Inter;letter-spacing:.16em;color:var(--terra-d);margin-top:4px">ESTÚDIO DIGITAL</div></div>
   </div>
-  <div style="position:absolute;left:70px;top:330px;width:560px">
+  <div style="position:absolute;left:70px;top:462px;width:600px">
     <h1 style="font-size:76px;line-height:1.02">Proposta de marca, site e redes sociais</h1>
-    <p style="font-size:22px;color:var(--soft);margin:22px 0 0;max-width:470px">Um plano para o Portal da Deusa ganhar no digital a mesma força que tem na vida real.</p>
+    <p style="font-size:22px;color:var(--soft);margin:16px 0 0;max-width:520px">Um plano para o Portal da Deusa ganhar no digital a mesma força que tem na vida real.</p>
   </div>
-  <div style="position:absolute;left:70px;bottom:250px;display:flex;gap:56px;align-items:flex-end">
-    <div><div style="font:700 13px 'Nunito Sans';letter-spacing:.14em;color:var(--terra-d)">PREPARADO PARA</div><div class="fr" style="font-size:25px;margin-top:4px">Desirê</div><div style="font-size:18px;color:var(--soft)">Portal da Deusa · Alquimias da Terra</div></div>
-    <div><div style="font:700 13px 'Nunito Sans';letter-spacing:.14em;color:var(--terra-d)">PRODUZIDO POR</div><div class="fr" style="font-size:25px;margin-top:4px">Ateliê Trama</div><div style="font-size:18px;color:var(--soft)">Liine Dias Freitas</div></div>
+  <div style="position:absolute;left:70px;bottom:240px;display:flex;gap:56px;align-items:flex-end">
+    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PREPARADO PARA</div><div class="fr" style="font-size:25px;margin-top:4px">Desirê</div><div style="font-size:18px;color:var(--soft)">Portal da Deusa · Alquimias da Terra</div></div>
+    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PRODUZIDO POR</div><div class="fr" style="font-size:25px;margin-top:4px">Vetor</div><div style="font-size:18px;color:var(--soft)">Liine Dias Freitas</div></div>
   </div>
   <div style="position:absolute;left:70px;bottom:70px;width:150px;height:150px;border-radius:50%;background:#fff;padding:8px;box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--terra)"><img src="img/emblema.png" alt="Portal da Deusa" style="width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.12)"></div><div style="display:none;width:170px;height:170px;border-radius:50%;background:#fff;padding:9px;box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--terra)"><img src="img/emblema.png" alt="Portal da Deusa" style="width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.12)"></div>
 </section>
 
 <!-- 2. DIAGNÓSTICO -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Diagnóstico do perfil</h2>
   <p class="lead">@portal.deusa tem 96 posts, 1.167 seguidores e segue 631 perfis.</p>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div style="display:flex;gap:32px;margin-top:22px;align-items:flex-start">
     <div class="shot">
       <img src="img/perfil.jpg" alt="Perfil atual do Instagram">
@@ -117,18 +113,17 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
       <div><span class="n">3</span><span><b>Link.</b> Hoje leva ao Linktree. Com o site pronto, passa a levar ao catálogo.</span></div>
       <div><span class="n">4</span><span><b>Destaques.</b> Já têm bom conteúdo. Falta padrão visual e uma ordem pensada para quem quer comprar.</span></div>
       <div><span class="n">5</span><span><b>Grade.</b> Mistura estilos de arte, fotos pessoais e reels. Os cartazes de produto são fortes; falta ritmo e cor para parecer uma vitrine.</span></div>
-      <div class="card" style="display:block;padding:16px 20px;border-radius:22px;margin-top:2px;background:var(--sand)"><b style="color:var(--terra-d)">Ponto forte</b><br>Produtos reais, fotos do processo ("saindo da forma") e uma história autêntica. É isso que vende.</div>
+      <div class="card" style="display:block;padding:16px 20px;border-radius:14px;margin-top:2px;background:var(--sand)"><b style="color:var(--terra-d)">Ponto forte</b><br>Produtos reais, fotos do processo ("saindo da forma") e uma história autêntica. É isso que vende.</div>
     </div>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 2</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 2</span></div>
 </section>
 
 <!-- 3. CORES -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Estudo de cores da marca</h2>
   <p class="lead">Retiradas da logo da Desirê: o cálice alado, o verde-esmeralda e o dourado.</p>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div class="sw">
     <div style="background:#1f4d3a;color:#f6ecd6">Verde Esmeralda<small>#1F4D3A · base</small></div>
     <div style="background:#c9a24b;color:#2b2a22">Dourado<small>#C9A24B · destaque</small></div>
@@ -149,33 +144,32 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
     </div>
     <div class="card">
       <h3>Letras</h3>
-      <p style="margin:10px 0 0;font:700 28px Fraunces,serif;color:#1f4d3a">Portal da Deusa</p>
+      <p style="margin:10px 0 0;font:700 28px Sora,serif;color:#1f4d3a">Portal da Deusa</p>
       <p style="margin:2px 0 14px;font-size:16px;color:var(--soft)">Para títulos e nomes de produtos. Pode manter a letra clássica da logo.</p>
-      <p style="margin:0;font:600 20px 'Nunito Sans';color:var(--ink)">Textos de legenda e artes</p>
+      <p style="margin:0;font:600 20px Inter;color:var(--ink)">Textos de legenda e artes</p>
       <p style="margin:2px 0 0;font-size:16px;color:var(--soft)">Letra simples e grande, fácil de ler no celular.</p>
     </div>
   </div>
   <div class="card" style="margin-top:20px">
     <h3>Ritmo do feed (proposta)</h3>
     <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:12px">
-      <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px 'Nunito Sans';color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px 'Nunito Sans';color:#f3e9d2;text-align:center">FRASE<br>sabedoria</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px 'Nunito Sans';color:#1f4d3a;text-align:center">FOTO<br>real</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px 'Nunito Sans';color:#f3e9d2;text-align:center">EDUCA<br>ervas</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px 'Nunito Sans';color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px 'Nunito Sans';color:#1f4d3a;text-align:center">FOTO<br>real</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">FRASE<br>sabedoria</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">FOTO<br>real</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">EDUCA<br>ervas</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">FOTO<br>real</div>
     </div>
     <p style="margin:14px 0 0;font-size:16.5px">Alternar cartaz, frase, foto e conteúdo educativo cria um ritmo reconhecível. Quem olha a grade entende a marca antes de ler a legenda.</p>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 3</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 3</span></div>
 </section>
 
 <!-- 4. CONTEÚDO -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Criação de conteúdo</h2>
   <p class="lead">Uma ideia que já é da marca: os planetas organizam a semana.</p>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div class="two" style="margin-top:24px">
     <div class="card">
       <h3>Pilares</h3>
@@ -212,15 +206,14 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
     <h3>Cuidado com a comunicação de saúde</h3>
     <p style="margin:6px 0 0;font-size:17px">A lista das garrafadas cita condições como diabetes, endometriose e depressão. Sugerimos escrever como <b>tradição e apoio ao bem-estar</b>, sem prometer cura ou tratamento, e manter a frase "não substitui orientação médica". Isso protege a Desirê e evita denúncias e bloqueios de conteúdo na plataforma.</p>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 4</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 4</span></div>
 </section>
 
 <!-- 5. SITE -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">O site da marca</h2>
   <p class="lead">O protótipo já está feito, nas versões clara e escura.</p>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div class="devs" style="margin-top:20px">
     <img src="img/site-desktop.png" alt="Site no computador" style="width:68%;margin:0 auto">
     <div style="display:flex;gap:14px;margin-top:16px">
@@ -250,12 +243,12 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 5</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 5</span></div>
 </section>
 
 <!-- 6. PLANOS -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Planos mensais de redes sociais</h2>
   <p class="lead">Escolha o ritmo que cabe hoje. Dá para mudar de plano depois.</p>
   <div class="plans" style="margin-top:34px">
@@ -301,15 +294,14 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
     </div>
   </div>
   <p style="margin:18px 0 0;font-size:16px;color:var(--soft)">As fotos e vídeos dos produtos são enviados pela Desirê. Impulsionamento pago fica à parte, conforme o valor que ela escolher investir.</p>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 6</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 6</span></div>
 </section>
 
 <!-- 7. SITE E MARCA -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Site e marca</h2>
   <p class="lead">Valores únicos, pagos uma vez.</p>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div class="card" style="margin-top:22px">
     <h3>Site Portal da Deusa</h3>
     <table style="margin-top:6px">
@@ -327,14 +319,13 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
       <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td>R$ 150</td></tr>
     </table>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 7</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 7</span></div>
 </section>
 
 <!-- 8. AVULSOS + PACOTE -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Serviços avulsos e pacote de lançamento</h2>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div class="card" style="margin-top:22px">
     <h3>Serviços avulsos</h3>
     <table style="margin-top:6px">
@@ -345,26 +336,25 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
       <tr><td>Pacote criativo, 15 artes + 5 stories ou reels</td><td>R$ 550</td></tr>
     </table>
   </div>
-  <div class="card" style="margin-top:22px;background:var(--terra);color:#fff7ee;padding:28px 30px">
-    <h3 style="color:#fff7ee;font-size:25px">Pacote de lançamento</h3>
+  <div class="card" style="margin-top:22px;background:var(--olive);color:#fff;padding:28px 30px">
+    <h3 style="color:#fff;font-size:25px">Pacote de lançamento</h3>
     <p style="margin:6px 0 14px;font-size:17.5px">Tudo o que a marca precisa para entrar no digital organizada.</p>
-    <table style="color:#fff7ee">
-      <tr><td style="border-color:#ffffff55">Site Vitrine + Guia de marca + Enobrecimento do perfil<small style="color:#ffe7d2">R$ 1.800 + R$ 700 + R$ 299, pagos uma vez</small></td><td style="color:#fff7ee;border-color:#ffffff55">R$ 2.799</td></tr>
-      <tr><td>Plano Encanto<small style="color:#ffe7d2">a partir do primeiro mês</small></td><td style="color:#fff7ee">R$ 900<small style="color:#ffe7d2">por mês</small></td></tr>
+    <table style="color:#fff">
+      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca + Enobrecimento do perfil<small style="color:#cfe3e6">R$ 1.800 + R$ 700 + R$ 299, pagos uma vez</small></td><td style="color:#fff;border-color:#ffffff44">R$ 2.799</td></tr>
+      <tr><td>Plano Encanto<small style="color:#cfe3e6">a partir do primeiro mês</small></td><td style="color:#fff">R$ 900<small style="color:#cfe3e6">por mês</small></td></tr>
     </table>
   </div>
   <div class="card" style="margin-top:22px;background:var(--sand2)">
     <h3>Como definimos esses valores</h3>
-    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Quem está começando costuma cobrar de R$ 800 a R$ 1.500 por mês na gestão de redes; um site simples custa de R$ 500 a R$ 3.000. Nossos planos partem abaixo disso porque o perfil está em fase inicial e este é um projeto de lançamento da nossa parceria.</p>
+    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Quem está começando costuma cobrar de R$ 800 a R$ 1.500 por mês na gestão de redes; um site simples custa de R$ 500 a R$ 3.000. Nossos planos partem abaixo disso porque o perfil está em fase inicial e este é um projeto de lançamento do nosso estúdio.</p>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 8</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 8</span></div>
 </section>
 
 <!-- 9. FECHAMENTO -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Ateliê Trama</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
   <h2 class="t">Combinados e próximos passos</h2>
-  <svg class="wave" width="120" height="10"><use href="#wv"/></svg>
   <div class="two" style="margin-top:22px;align-items:start">
     <div class="card note">
       <h3>Combinados</h3>
@@ -395,9 +385,9 @@ td:last-child small{font:600 13px 'Nunito Sans';text-align:right}
   </div>
   <div style="margin-top:38px;display:flex;align-items:center;gap:16px">
     <svg width="60" height="60"><use href="#mark"/></svg>
-    <div><div class="fr" style="font-size:28px;line-height:1.15">Vamos tecer essa marca juntas.</div><div style="font-size:17px;color:var(--soft);margin-top:4px">Ateliê Trama · Liine Dias Freitas</div></div>
+    <div><div class="fr" style="font-size:28px;line-height:1.15">Vamos dar vida digital ao Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:4px">Vetor · Liine Dias Freitas</div></div>
   </div>
-  <div class="foot"><span>Ateliê Trama</span><span>Página 9</span></div>
+  <div class="foot"><span>Vetor</span><span>Página 9</span></div>
 </section>
 
 </body>
