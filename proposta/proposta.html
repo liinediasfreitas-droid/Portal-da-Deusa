@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <title>Proposta Portal da Deusa</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&display=swap">
 <style>
-/* Identidade do estúdio: tecnologia e marketing digital. Azul-petróleo e coral, formas geométricas e letra grande.
-   A paleta da cliente (verde, dourado, rubi) aparece só no estudo de cores e nas artes dela. */
-:root{--bg:#f6f8f8;--sand:#e9efef;--sand2:#d6e3e5;--terra:#ee6c4d;--terra-d:#b8432a;--olive:#0f4c5c;--ink:#1d2b30;--soft:#46595f;--line:#c5d6d9}
+/* Paleta da cliente (verde, dourado, pergaminho e rubi), letra grande e legível. A marca do estúdio ainda será desenvolvida. */
+:root{--bg:#fbf6e9;--sand:#f0e4c8;--sand2:#e6d6b0;--terra:#c9a24b;--terra-d:#7a1f2b;--olive:#1f4d3a;--ink:#2b2a22;--soft:#5b5646;--line:#d9c9a0}
 @page{size:210mm 297mm;margin:0}
 *{box-sizing:border-box}
 html,body{margin:0}
 body{font:400 17px/1.5 Inter,system-ui,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-h1,h2,h3,.fr{font-family:Sora,Georgia,serif;font-weight:700;color:var(--ink);margin:0;letter-spacing:-.01em}
+h1,h2,h3,.fr{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--ink);margin:0;letter-spacing:-.01em}
 .page{width:794px;height:1123px;position:relative;overflow:hidden;background:var(--bg);padding:70px 60px 0;page-break-after:always;break-after:page}
 .page:last-child{page-break-after:auto;break-after:auto}
-.top{position:absolute;left:60px;right:60px;top:26px;display:flex;justify-content:space-between;align-items:center;font:700 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-d)}
+.top{position:absolute;left:60px;right:60px;top:30px;display:flex;justify-content:space-between;align-items:center;font:700 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-d)}
 .top .brand{display:flex;align-items:center;gap:8px}
+.page:not(.cover)::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:var(--olive);border-bottom:3px solid var(--terra)}
 .foot{position:absolute;left:60px;right:60px;bottom:28px;display:flex;justify-content:space-between;font:600 13px Inter;color:var(--soft);border-top:1.5px solid var(--line);padding-top:10px}
 h2.t{font-size:34px;line-height:1.1;margin-top:10px}
 .lead{font-size:19px;color:var(--soft);margin:8px 0 0;max-width:640px}
@@ -47,19 +47,19 @@ b,strong{font-weight:700}
 .plan.hl h3,.plan.hl .pr{color:#fff}
 .plan h3{font-size:25px;margin-bottom:4px}
 .plan .for{font-size:15px;color:var(--soft);margin-bottom:16px}
-.plan.hl .for{color:#cfe3e6}
+.plan.hl .for{color:#e9dcb8}
 .plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:17px;line-height:1.35}
 .plan li{padding-left:24px;position:relative}
-.plan li:before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--terra-d)}
-.plan.hl li:before{color:#ff9d84}
-.pr{margin-top:auto;border-top:2px solid var(--line);padding-top:14px;font:700 36px Sora,serif;color:var(--terra-d)}
+.plan li:before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--olive)}
+.plan.hl li:before{color:#e7c875}
+.pr{margin-top:auto;border-top:2px solid var(--line);padding-top:14px;font:700 32px Cinzel,serif;color:var(--olive)}
 .plan.hl .pr{border-color:#ffffff66}
 .pr small{display:block;font:600 14px Inter;letter-spacing:.08em;opacity:.85}
 .badge{position:absolute;top:-14px;left:22px;background:var(--terra);color:var(--ink);font:700 12.5px Inter;letter-spacing:.1em;padding:6px 12px;border-radius:6px}
 table{width:100%;border-collapse:collapse;font-size:17.5px}
 td{padding:11px 0;border-bottom:1.5px dashed var(--line);vertical-align:top}
 tr:last-child td{border-bottom:0}
-td:last-child{text-align:right;font:700 20px Sora,serif;color:var(--terra-d);white-space:nowrap;padding-left:16px}
+td:last-child{text-align:right;font:700 19px Cinzel,serif;color:var(--olive);white-space:nowrap;padding-left:16px}
 td small{display:block;font:400 15px/1.35 Inter;color:var(--soft);margin-top:2px}
 td:last-child small{font:600 13px Inter;text-align:right}
 .note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:7px;font-size:16.5px;line-height:1.4}
@@ -69,33 +69,25 @@ td:last-child small{font:600 13px Inter;text-align:right}
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute"><defs>
-  <symbol id="mark" viewBox="0 0 40 40"><path d="M7 8L20 33L33 8" fill="none" stroke="#0f4c5c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="4" width="8" height="8" rx="1.5" fill="#fff" stroke="#0f4c5c" stroke-width="2.4"/><rect x="29" y="4" width="8" height="8" rx="1.5" fill="#fff" stroke="#0f4c5c" stroke-width="2.4"/><circle cx="20" cy="33" r="4.6" fill="#ee6c4d"/></symbol>
-</defs></svg>
-
 <!-- 1. CAPA -->
-<section class="page" style="padding:0;background:var(--bg)">
-  <div style="position:absolute;right:0;top:0;width:300px;height:430px;background:var(--olive);border-bottom-left-radius:16px"></div>
-  <svg style="position:absolute;right:20px;top:40px" width="270" height="330" viewBox="0 0 270 330"><path d="M108 64L196 196L64 196L240 240" fill="none" stroke="#ee6c4d" stroke-width="2" opacity=".9"/><circle cx="20" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="20" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="196" r="5" fill="#ee6c4d" opacity="1"/><circle cx="64" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="64" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="64" r="5" fill="#ee6c4d" opacity="1"/><circle cx="108" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="108" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="152" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="152" r="5" fill="#ee6c4d" opacity="1"/><circle cx="196" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="240" r="3" fill="#ffffff" opacity="0.55"/><circle cx="196" cy="284" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="20" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="64" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="108" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="152" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="196" r="3" fill="#ffffff" opacity="0.55"/><circle cx="240" cy="240" r="5" fill="#ee6c4d" opacity="1"/><circle cx="240" cy="284" r="3" fill="#ffffff" opacity="0.55"/></svg>
-  <div style="position:absolute;left:0;bottom:0;width:100%;height:14px;background:var(--olive)"></div>
-  <div style="position:absolute;left:70px;top:70px;display:flex;align-items:center;gap:12px">
-    <svg width="54" height="54"><use href="#mark"/></svg>
-    <div><div class="fr" style="font-size:26px;line-height:1">Vetor</div><div style="font:700 12px Inter;letter-spacing:.16em;color:var(--terra-d);margin-top:4px">ESTÚDIO DIGITAL</div></div>
+<section class="page cover" style="padding:0;background:var(--bg)">
+  <div style="position:absolute;right:0;top:0;width:300px;height:470px;background:var(--olive);border-bottom-left-radius:16px;border-bottom:4px solid var(--terra);border-left:4px solid var(--terra)"></div>
+  <div style="position:absolute;right:50px;top:130px;width:200px;height:200px;border-radius:50%;background:#fff;padding:9px;box-shadow:0 0 0 4px var(--olive),0 0 0 7px var(--terra)"><img src="img/emblema.png" alt="Portal da Deusa" style="width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.12)"></div>
+  <div style="position:absolute;left:0;bottom:0;width:100%;height:14px;background:var(--olive);border-top:3px solid var(--terra)"></div>
+  <div style="position:absolute;left:70px;top:70px;font:700 13px Inter;letter-spacing:.16em;color:var(--terra-d)">PROPOSTA COMERCIAL</div>
+  <div style="position:absolute;left:70px;top:500px;width:640px">
+    <h1 style="font-size:50px;line-height:1.12;color:var(--olive)">Proposta de marca, site e redes sociais</h1>
+    <p style="font-size:21px;color:var(--soft);margin:18px 0 0;max-width:540px">Um plano para o Portal da Deusa ganhar no digital a mesma força que tem na vida real.</p>
   </div>
-  <div style="position:absolute;left:70px;top:462px;width:600px">
-    <h1 style="font-size:76px;line-height:1.02">Proposta de marca, site e redes sociais</h1>
-    <p style="font-size:22px;color:var(--soft);margin:16px 0 0;max-width:520px">Um plano para o Portal da Deusa ganhar no digital a mesma força que tem na vida real.</p>
+  <div style="position:absolute;left:70px;bottom:90px;display:flex;gap:64px;align-items:flex-start">
+    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PREPARADO PARA</div><div class="fr" style="font-size:24px;margin-top:4px">Desirê</div><div style="font-size:18px;color:var(--soft)">Portal da Deusa · Alquimias da Terra</div></div>
+    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PRODUZIDO POR</div><div class="fr" style="font-size:24px;margin-top:4px">Liine Dias Freitas</div></div>
   </div>
-  <div style="position:absolute;left:70px;bottom:240px;display:flex;gap:56px;align-items:flex-end">
-    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PREPARADO PARA</div><div class="fr" style="font-size:25px;margin-top:4px">Desirê</div><div style="font-size:18px;color:var(--soft)">Portal da Deusa · Alquimias da Terra</div></div>
-    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PRODUZIDO POR</div><div class="fr" style="font-size:25px;margin-top:4px">Vetor</div><div style="font-size:18px;color:var(--soft)">Liine Dias Freitas</div></div>
-  </div>
-  <div style="position:absolute;left:70px;bottom:70px;width:150px;height:150px;border-radius:50%;background:#fff;padding:8px;box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--terra)"><img src="img/emblema.png" alt="Portal da Deusa" style="width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.12)"></div><div style="display:none;width:170px;height:170px;border-radius:50%;background:#fff;padding:9px;box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--terra)"><img src="img/emblema.png" alt="Portal da Deusa" style="width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.12)"></div>
 </section>
 
 <!-- 2. DIAGNÓSTICO -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Diagnóstico do perfil</h2>
   <p class="lead">@portal.deusa tem 96 posts, 1.167 seguidores e segue 631 perfis.</p>
   <div style="display:flex;gap:32px;margin-top:22px;align-items:flex-start">
@@ -116,12 +108,12 @@ td:last-child small{font:600 13px Inter;text-align:right}
       <div class="card" style="display:block;padding:16px 20px;border-radius:14px;margin-top:2px;background:var(--sand)"><b style="color:var(--terra-d)">Ponto forte</b><br>Produtos reais, fotos do processo ("saindo da forma") e uma história autêntica. É isso que vende.</div>
     </div>
   </div>
-  <div class="foot"><span>Vetor</span><span>Página 2</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 2</span></div>
 </section>
 
 <!-- 3. CORES -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Estudo de cores da marca</h2>
   <p class="lead">Retiradas da logo da Desirê: o cálice alado, o verde-esmeralda e o dourado.</p>
   <div class="sw">
@@ -144,7 +136,7 @@ td:last-child small{font:600 13px Inter;text-align:right}
     </div>
     <div class="card">
       <h3>Letras</h3>
-      <p style="margin:10px 0 0;font:700 28px Sora,serif;color:#1f4d3a">Portal da Deusa</p>
+      <p style="margin:10px 0 0;font:700 28px Cinzel,serif;color:#1f4d3a">Portal da Deusa</p>
       <p style="margin:2px 0 14px;font-size:16px;color:var(--soft)">Para títulos e nomes de produtos. Pode manter a letra clássica da logo.</p>
       <p style="margin:0;font:600 20px Inter;color:var(--ink)">Textos de legenda e artes</p>
       <p style="margin:2px 0 0;font-size:16px;color:var(--soft)">Letra simples e grande, fácil de ler no celular.</p>
@@ -162,12 +154,12 @@ td:last-child small{font:600 13px Inter;text-align:right}
     </div>
     <p style="margin:14px 0 0;font-size:16.5px">Alternar cartaz, frase, foto e conteúdo educativo cria um ritmo reconhecível. Quem olha a grade entende a marca antes de ler a legenda.</p>
   </div>
-  <div class="foot"><span>Vetor</span><span>Página 3</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 3</span></div>
 </section>
 
 <!-- 4. CONTEÚDO -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Criação de conteúdo</h2>
   <p class="lead">Uma ideia que já é da marca: os planetas organizam a semana.</p>
   <div class="two" style="margin-top:24px">
@@ -206,12 +198,12 @@ td:last-child small{font:600 13px Inter;text-align:right}
     <h3>Cuidado com a comunicação de saúde</h3>
     <p style="margin:6px 0 0;font-size:17px">A lista das garrafadas cita condições como diabetes, endometriose e depressão. Sugerimos escrever como <b>tradição e apoio ao bem-estar</b>, sem prometer cura ou tratamento, e manter a frase "não substitui orientação médica". Isso protege a Desirê e evita denúncias e bloqueios de conteúdo na plataforma.</p>
   </div>
-  <div class="foot"><span>Vetor</span><span>Página 4</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 4</span></div>
 </section>
 
 <!-- 5. SITE -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">O site da marca</h2>
   <p class="lead">O protótipo já está feito, nas versões clara e escura.</p>
   <div class="devs" style="margin-top:20px">
@@ -243,12 +235,12 @@ td:last-child small{font:600 13px Inter;text-align:right}
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Vetor</span><span>Página 5</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 5</span></div>
 </section>
 
 <!-- 6. PLANOS -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Planos mensais de redes sociais</h2>
   <p class="lead">Escolha o ritmo que cabe hoje. Dá para mudar de plano depois.</p>
   <div class="plans" style="margin-top:34px">
@@ -294,12 +286,12 @@ td:last-child small{font:600 13px Inter;text-align:right}
     </div>
   </div>
   <p style="margin:18px 0 0;font-size:16px;color:var(--soft)">As fotos e vídeos dos produtos são enviados pela Desirê. Impulsionamento pago fica à parte, conforme o valor que ela escolher investir.</p>
-  <div class="foot"><span>Vetor</span><span>Página 6</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 6</span></div>
 </section>
 
 <!-- 7. SITE E MARCA -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Site e marca</h2>
   <p class="lead">Valores únicos, pagos uma vez.</p>
   <div class="card" style="margin-top:22px">
@@ -319,12 +311,12 @@ td:last-child small{font:600 13px Inter;text-align:right}
       <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td>R$ 150</td></tr>
     </table>
   </div>
-  <div class="foot"><span>Vetor</span><span>Página 7</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 7</span></div>
 </section>
 
 <!-- 8. AVULSOS + PACOTE -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Serviços avulsos e pacote de lançamento</h2>
   <div class="card" style="margin-top:22px">
     <h3>Serviços avulsos</h3>
@@ -340,20 +332,20 @@ td:last-child small{font:600 13px Inter;text-align:right}
     <h3 style="color:#fff;font-size:25px">Pacote de lançamento</h3>
     <p style="margin:6px 0 14px;font-size:17.5px">Tudo o que a marca precisa para entrar no digital organizada.</p>
     <table style="color:#fff">
-      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca + Enobrecimento do perfil<small style="color:#cfe3e6">R$ 1.800 + R$ 700 + R$ 299, pagos uma vez</small></td><td style="color:#fff;border-color:#ffffff44">R$ 2.799</td></tr>
-      <tr><td>Plano Encanto<small style="color:#cfe3e6">a partir do primeiro mês</small></td><td style="color:#fff">R$ 900<small style="color:#cfe3e6">por mês</small></td></tr>
+      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca + Enobrecimento do perfil<small style="color:#e9dcb8">R$ 1.800 + R$ 700 + R$ 299, pagos uma vez</small></td><td style="color:#fff;border-color:#ffffff44">R$ 2.799</td></tr>
+      <tr><td>Plano Encanto<small style="color:#e9dcb8">a partir do primeiro mês</small></td><td style="color:#fff">R$ 900<small style="color:#e9dcb8">por mês</small></td></tr>
     </table>
   </div>
   <div class="card" style="margin-top:22px;background:var(--sand2)">
     <h3>Como definimos esses valores</h3>
-    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Quem está começando costuma cobrar de R$ 800 a R$ 1.500 por mês na gestão de redes; um site simples custa de R$ 500 a R$ 3.000. Nossos planos partem abaixo disso porque o perfil está em fase inicial e este é um projeto de lançamento do nosso estúdio.</p>
+    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Quem está começando costuma cobrar de R$ 800 a R$ 1.500 por mês na gestão de redes; um site simples custa de R$ 500 a R$ 3.000. Nossos planos partem abaixo disso porque o perfil está em fase inicial e este é um projeto de lançamento.</p>
   </div>
-  <div class="foot"><span>Vetor</span><span>Página 8</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 8</span></div>
 </section>
 
 <!-- 9. FECHAMENTO -->
 <section class="page">
-  <div class="top"><span class="brand"><svg width="22" height="22"><use href="#mark"/></svg>Vetor</span><span>Proposta · Portal da Deusa</span></div>
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Combinados e próximos passos</h2>
   <div class="two" style="margin-top:22px;align-items:start">
     <div class="card note">
@@ -383,11 +375,8 @@ td:last-child small{font:600 13px Inter;text-align:right}
     <h3>Base da pesquisa de preços</h3>
     <p class="src" style="margin:6px 0 0">Gestão de redes: iniciantes de R$ 800 a R$ 1.500 por cliente/mês; gestão básica de 1 rede com 12 posts, de R$ 1.200 a R$ 2.500 (Jamile Fernandez; FreelaSemCrise). Site simples ou one page: R$ 500 a R$ 3.000; institucional simples: R$ 1.500 a R$ 5.000; loja virtual: a partir de cerca de R$ 6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Logo: R$ 300 a R$ 5.000; manual de marca: R$ 2.500 a R$ 8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: R$ 800 a R$ 1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais, e os valores desta proposta podem ser ajustados.</p>
   </div>
-  <div style="margin-top:38px;display:flex;align-items:center;gap:16px">
-    <svg width="60" height="60"><use href="#mark"/></svg>
-    <div><div class="fr" style="font-size:28px;line-height:1.15">Vamos dar vida digital ao Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:4px">Vetor · Liine Dias Freitas</div></div>
-  </div>
-  <div class="foot"><span>Vetor</span><span>Página 9</span></div>
+  <div style="margin-top:38px"><div class="fr" style="font-size:26px;line-height:1.2;color:var(--olive)">Vamos dar vida digital ao Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Liine Dias Freitas</div></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 9</span></div>
 </section>
 
 </body>
