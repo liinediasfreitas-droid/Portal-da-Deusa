@@ -90,6 +90,23 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
 .note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:9px;font-size:16.5px;line-height:1.42}
 .tight td{padding:8px 0}
 .tight td.pc{padding:8px 0 8px 16px}
+
+.tasting{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.tasting figure{margin:0}
+.ph{position:relative;overflow:hidden;background:#fff}
+.tasting .ph{aspect-ratio:9/16;border-radius:14px;box-shadow:0 0 0 2px var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tasting figcaption b{display:block;font:700 15px Cinzel,serif;color:var(--olive);margin:10px 0 4px;line-height:1.25;word-spacing:.1em}
+.tasting figcaption span{display:block;font-size:13.5px;line-height:1.4;color:var(--ink)}
+.reel{display:flex;gap:18px;align-items:center;margin-top:20px;background:var(--sand);border-radius:16px;padding:14px 20px}
+.reel .frames{display:flex;gap:8px;flex:none}
+.reel .ph{width:94px;aspect-ratio:9/16;border-radius:10px}
+.reel b{display:block;font:700 17px Cinzel,serif;color:var(--olive);margin-bottom:4px;line-height:1.25;word-spacing:.1em}
+.reel p{margin:0;font-size:15px;line-height:1.45}
+.reel small{display:block;margin-top:8px;font:600 13.5px Inter;color:var(--soft)}
+.play{position:absolute;inset:0;display:grid;place-items:center}
+.play i{width:38px;height:38px;border-radius:50%;background:#ffffffdd;display:grid;place-items:center;box-shadow:0 1px 6px #0004}
+.play i:after{content:"";border-left:12px solid var(--olive);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
 </style>
 </head>
 <body>
@@ -199,17 +216,64 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     <div><b>SEX</b>Vênus<i>amor</i></div>
     <div><b>SÁB</b>Saturno<i>proteção</i></div>
   </div>
-  <p style="margin:12px 0 0;font-size:16px;color:var(--soft)">Vênus e Saturno ainda não têm arte. Podem entrar como lançamento, despertando a curiosidade do público.</p>
-  <div class="card" style="margin-top:28px">
-    <h3>Como trabalhamos o conteúdo</h3>
-    <ul class="list">
-      <li>Planejamos o mês junto com você.</li>
-      <li>Criamos as artes e as legendas no padrão da marca.</li>
-      <li>Você aprova tudo antes de publicar.</li>
-    </ul>
+  <p style="margin:12px 0 0;font-size:16px;color:var(--soft)">Vênus já ganhou uma sugestão de arte, na próxima página. Saturno ainda não tem e pode entrar como lançamento, despertando a curiosidade do público.</p>
+  <div class="two" style="margin-top:28px;align-items:start">
+    <div class="card">
+      <h3>Formatos</h3>
+      <ul class="list">
+        <li><b>Cartaz do produto</b>, na paleta da marca</li>
+        <li><b>Carrossel educativo</b>, sobre ervas e banhos</li>
+        <li><b>Story com enquete</b>, para conversar com o público</li>
+        <li><b>Reel curto</b>, com o processo e o ritual</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Como trabalhamos</h3>
+      <ul class="list">
+        <li>Planejamos o mês junto com você.</li>
+        <li>Criamos as artes e as legendas no padrão da marca.</li>
+        <li>Você aprova tudo antes de publicar.</li>
+      </ul>
+    </div>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 4</span></div>
 </section>
+
+<!-- 4b. DEGUSTAÇÃO -->
+<section class="page">
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
+  <h2 class="t">Degustação de conteúdo</h2>
+  <p class="lead">Quatro formatos prontos, para você ver como o seu conteúdo pode ficar com a identidade da sua marca.</p>
+  <div class="tasting">
+    <figure>
+      <div class="ph"><img src="img/post-venus.jpg" alt="Cartaz do Banho Planetário Vênus"></div>
+      <figcaption><b>Cartaz do produto: Vênus</b><span>Sexta-feira é dia de Vênus: amor, beleza e autoestima. Um banho de rosa vermelha, hibisco, jasmim, camomila e malva para fechar a semana com carinho por você. Qual intenção você leva para o seu banho?</span></figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img src="img/post-alecrim.jpg" alt="Capa de carrossel sobre o alecrim"></div>
+      <figcaption><b>Carrossel educativo: capa</b><span>Você conhece o alecrim? Deslize para descobrir como essa erva está presente nos banhos e chás. Salve esta publicação para consultar depois.</span></figcaption>
+    </figure>
+    <figure>
+      <div class="ph"><img src="img/story-enquete.jpg" alt="Story com enquete sobre qual banho combina com o dia"></div>
+      <figcaption><b>Story com enquete</b><span>Uma enquete simples convida o público a participar e ajuda a descobrir quais banhos despertam mais interesse.</span></figcaption>
+    </figure>
+  </div>
+  <div class="reel">
+    <div class="frames">
+      <div class="ph"><img src="img/reel-1.jpg" alt="Reel, quadro 1"></div>
+      <div class="ph"><img src="img/reel-2.jpg" alt="Reel, quadro 2"><div class="play"><i></i></div></div>
+      <div class="ph"><img src="img/reel-3.jpg" alt="Reel, quadro 3"></div>
+    </div>
+    <div>
+      <b>Reel: o banho do dia</b>
+      <p>O ritual do banho do dia: ervas, água morna e intenção. Qual erva você mais gosta de usar? Conte nos comentários.</p>
+      <small>Vídeo de 8 segundos, enviado junto com esta proposta.</small>
+    </div>
+  </div>
+  <p class="src" style="margin:14px 0 0">Imagens e vídeo de exemplo. As ervas e os textos do cartaz de Vênus são uma sugestão, para você validar.</p>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 5</span></div>
+</section>
+
 
 <!-- 5. SITE -->
 <section class="page">
@@ -240,12 +304,12 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li>Botão de pedido pelo WhatsApp</li>
         <li>Endereço próprio (.com.br)</li>
         <li>Fotos reais dos produtos</li>
-        <li>Artes de Vênus e Saturno, quando estiverem prontas</li>
+        <li>Arte de Saturno, quando estiver pronta</li>
         <li>Loja com Pix e cartão, caso você deseje vender pelo site</li>
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Liine Dias Freitas</span><span>Página 5</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 6</span></div>
 </section>
 
 <!-- 6. PLANOS -->
@@ -302,7 +366,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     </div>
     <div class="sp"><span class="old">De R$&nbsp;250 por mês</span><span class="now">R$&nbsp;79</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
   </div>
-  <div class="foot"><span>Liine Dias Freitas</span><span>Página 6</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 7</span></div>
 </section>
 
 <!-- 7. SITE E MARCA -->
@@ -327,7 +391,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
       <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td class="pc"><span class="old">R$&nbsp;90</span><span class="now">R$&nbsp;49</span></td></tr>
     </table>
   </div>
-  <div class="foot"><span>Liine Dias Freitas</span><span>Página 7</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 8</span></div>
 </section>
 
 <!-- 8. VALORES COMPLEMENTARES -->
@@ -360,7 +424,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     </table>
     <p style="margin:12px 0 0;font-size:16px;color:#e9dcb8">À vista no Pix ou em até 12x no cartão, pelo Mercado Pago.</p>
   </div>
-  <div class="foot"><span>Liine Dias Freitas</span><span>Página 8</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 9</span></div>
 </section>
 
 <!-- 9. PAGAMENTO E CONDIÇÕES -->
@@ -384,7 +448,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
       <li>Os horários de publicação serão testados nas primeiras semanas, para descobrirmos quando há mais engajamento.</li>
     </ol>
   </div>
-  <div class="foot"><span>Liine Dias Freitas</span><span>Página 9</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 10</span></div>
 </section>
 
 <!-- 10. ETAPAS E REFERÊNCIAS -->
@@ -404,7 +468,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     <p class="src" style="margin:6px 0 0">Gestão de redes: profissionais iniciantes cobram de R$&nbsp;800 a R$&nbsp;1.500 por cliente ao mês; a gestão básica de 1 rede com 12 publicações fica entre R$&nbsp;1.200 e R$&nbsp;2.500 (Jamile Fernandez; FreelaSemCrise). Sites: simples ou de página única, de R$&nbsp;500 a R$&nbsp;3.000; institucionais simples, de R$&nbsp;1.500 a R$&nbsp;5.000; lojas virtuais, a partir de cerca de R$&nbsp;6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Identidade visual: logo de R$&nbsp;300 a R$&nbsp;5.000; manual de marca de R$&nbsp;2.500 a R$&nbsp;8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: de R$&nbsp;800 a R$&nbsp;1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais. Os valores regulares desta proposta ficam na base dessas faixas ou abaixo delas, e o valor de lançamento é uma condição especial para os primeiros projetos.</p>
   </div>
   <div style="margin-top:34px"><div class="fr" style="font-size:24px;line-height:1.3;color:var(--olive)">Será um prazer cuidar da presença digital do Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Liine Dias Freitas</div></div>
-  <div class="foot"><span>Liine Dias Freitas</span><span>Página 10</span></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 11</span></div>
 </section>
 
 </body>
