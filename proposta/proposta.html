@@ -11,15 +11,15 @@
 *{box-sizing:border-box}
 html,body{margin:0}
 body{font:400 17px/1.5 Inter,system-ui,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-h1,h2,h3,.fr{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--ink);margin:0;letter-spacing:-.01em}
+h1,h2,h3,.fr{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--ink);margin:0;letter-spacing:.01em;word-spacing:.14em}
 .page{width:794px;height:1123px;position:relative;overflow:hidden;background:var(--bg);padding:70px 60px 0;page-break-after:always;break-after:page}
 .page:last-child{page-break-after:auto;break-after:auto}
-.top{position:absolute;left:60px;right:60px;top:30px;display:flex;justify-content:space-between;align-items:center;font:700 12.5px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-d)}
+.top{position:absolute;left:60px;right:60px;top:30px;display:flex;justify-content:space-between;align-items:center;font:700 13.5px Inter;letter-spacing:.06em;word-spacing:.4em;text-transform:uppercase;color:var(--terra-d)}
 .top .brand{display:flex;align-items:center;gap:8px}
 .page:not(.cover)::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:var(--olive);border-bottom:3px solid var(--terra)}
 .foot{position:absolute;left:60px;right:60px;bottom:28px;display:flex;justify-content:space-between;font:600 13px Inter;color:var(--soft);border-top:1.5px solid var(--line);padding-top:10px}
 h2.t{font-size:34px;line-height:1.1;margin-top:10px}
-.lead{font-size:19px;color:var(--soft);margin:8px 0 0;max-width:640px}
+.lead{font-size:19px;color:var(--soft);margin:8px 0 0;max-width:674px}
 .card{background:var(--sand);border-radius:16px;padding:24px 28px}
 .card h3{font-size:21px;margin-bottom:6px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -27,19 +27,19 @@ h2.t{font-size:34px;line-height:1.1;margin-top:10px}
 .list li{padding-left:22px;position:relative}
 .list li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--terra)}
 b,strong{font-weight:700}
-.shot{position:relative;width:372px;flex:none}
+.shot{position:relative;width:330px;flex:none}
 .shot img{width:100%;display:block;border-radius:14px;box-shadow:0 0 0 2px var(--line)}
 .n{position:absolute;right:-14px;width:30px;height:30px;border-radius:50%;background:var(--terra-d);color:#fff;font:700 15px Inter;display:grid;place-items:center;box-shadow:0 0 0 3px var(--bg)}
 .zone{position:absolute;left:0;right:0;border:2.5px solid var(--terra);border-radius:10px}
-.legend{display:flex;flex-direction:column;gap:14px;flex:1;min-width:0}
-.legend>div{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:16px;line-height:1.4}
+.legend{display:flex;flex-direction:column;gap:12px;flex:1;min-width:0}
+.legend>div{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15px;line-height:1.4}
 .legend .n{position:static;box-shadow:none}
 .sw{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}
-.sw div{border-radius:14px;height:150px;padding:14px;display:flex;flex-direction:column;justify-content:flex-end;font:700 15px/1.25 Inter;box-shadow:inset 0 0 0 1.5px #0002}
+.sw div{border-radius:14px;height:116px;padding:14px;display:flex;flex-direction:column;justify-content:flex-end;font:700 15px/1.25 Inter;box-shadow:inset 0 0 0 1.5px #0002}
 .sw small{font:600 13.5px Inter;opacity:.95;margin-top:3px}
 .week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:14px}
 .week div{background:var(--sand);border-radius:12px;padding:12px 4px;text-align:center;font-size:15px;line-height:1.25}
-.week b{display:block;font:700 12.5px Inter;letter-spacing:.1em;color:var(--terra-d);margin-bottom:4px}
+.week b{display:block;font:700 13px Inter;letter-spacing:.06em;color:var(--terra-d);margin-bottom:4px}
 .week i{display:block;font-style:normal;color:var(--soft);font-size:13.5px;margin-top:3px}
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
 .plan{background:var(--sand);border-radius:20px;padding:30px 22px 22px;display:flex;flex-direction:column;height:700px;position:relative}
@@ -48,22 +48,22 @@ b,strong{font-weight:700}
 .plan h3{font-size:25px;margin-bottom:4px}
 .plan .for{font-size:15px;color:var(--soft);margin-bottom:16px}
 .plan.hl .for{color:#e9dcb8}
-.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:17px;line-height:1.35}
+.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.35}
 .plan li{padding-left:24px;position:relative}
 .plan li:before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--olive)}
 .plan.hl li:before{color:#e7c875}
 .pr{margin-top:auto;border-top:2px solid var(--line);padding-top:14px;font:700 32px Cinzel,serif;color:var(--olive)}
 .plan.hl .pr{border-color:#ffffff66}
-.pr small{display:block;font:600 14px Inter;letter-spacing:.08em;opacity:.85}
-.badge{position:absolute;top:-14px;left:22px;background:var(--terra);color:var(--ink);font:700 12.5px Inter;letter-spacing:.1em;padding:6px 12px;border-radius:6px}
+.pr small{display:block;font:600 14px Inter;letter-spacing:.04em;word-spacing:.3em;opacity:.85}
+.badge{position:absolute;top:-14px;left:22px;background:var(--terra);color:var(--ink);font:700 13px Inter;letter-spacing:.05em;word-spacing:.4em;padding:6px 12px;border-radius:6px}
 table{width:100%;border-collapse:collapse;font-size:17.5px}
 td{padding:11px 0;border-bottom:1.5px dashed var(--line);vertical-align:top}
 tr:last-child td{border-bottom:0}
 td:last-child{text-align:right;font:700 19px Cinzel,serif;color:var(--olive);white-space:nowrap;padding-left:16px}
 td small{display:block;font:400 15px/1.35 Inter;color:var(--soft);margin-top:2px}
 td:last-child small{font:600 13px Inter;text-align:right}
-.note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:7px;font-size:16.5px;line-height:1.4}
-.src{font-size:14px;line-height:1.45;color:var(--soft)}
+.note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:16px;line-height:1.38}
+.src{font-size:13.5px;line-height:1.4;color:var(--soft)}
 .devs img{display:block;border-radius:12px;box-shadow:0 0 0 2px var(--line)}
 </style>
 </head>
@@ -74,23 +74,23 @@ td:last-child small{font:600 13px Inter;text-align:right}
   <div style="position:absolute;right:0;top:0;width:300px;height:470px;background:var(--olive);border-bottom-left-radius:16px;border-bottom:4px solid var(--terra);border-left:4px solid var(--terra)"></div>
   <div style="position:absolute;right:50px;top:130px;width:200px;height:200px;border-radius:50%;background:#fff;padding:9px;box-shadow:0 0 0 4px var(--olive),0 0 0 7px var(--terra)"><img src="img/emblema.png" alt="Portal da Deusa" style="width:100%;height:100%;border-radius:50%;object-fit:cover;transform:scale(1.12)"></div>
   <div style="position:absolute;left:0;bottom:0;width:100%;height:14px;background:var(--olive);border-top:3px solid var(--terra)"></div>
-  <div style="position:absolute;left:70px;top:70px;font:700 13px Inter;letter-spacing:.16em;color:var(--terra-d)">PROPOSTA COMERCIAL</div>
+  <div style="position:absolute;left:70px;top:70px;font:700 14px Inter;letter-spacing:.06em;word-spacing:.4em;color:var(--terra-d)">PROPOSTA COMERCIAL</div>
   <div style="position:absolute;left:70px;top:500px;width:640px">
     <h1 style="font-size:50px;line-height:1.12;color:var(--olive)">Proposta de marca, site e redes sociais</h1>
-    <p style="font-size:21px;color:var(--soft);margin:18px 0 0;max-width:540px">Um plano para o Portal da Deusa ganhar no digital a mesma força que tem na vida real.</p>
+    <p style="font-size:21px;color:var(--soft);margin:18px 0 0;max-width:540px">Uma proposta para levar ao ambiente digital a mesma força que o Portal da Deusa já tem na vida real.</p>
   </div>
   <div style="position:absolute;left:70px;bottom:90px;display:flex;gap:64px;align-items:flex-start">
-    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PREPARADO PARA</div><div class="fr" style="font-size:24px;margin-top:4px">Desirê</div><div style="font-size:18px;color:var(--soft)">Portal da Deusa · Alquimias da Terra</div></div>
-    <div><div style="font:700 13px Inter;letter-spacing:.14em;color:var(--terra-d)">PRODUZIDO POR</div><div class="fr" style="font-size:24px;margin-top:4px">Liine Dias Freitas</div></div>
+    <div><div style="font:700 14px Inter;letter-spacing:.06em;word-spacing:.4em;color:var(--terra-d)">PREPARADO PARA</div><div class="fr" style="font-size:24px;margin-top:4px">Desirê</div><div style="font-size:18px;color:var(--soft)">Portal da Deusa · Alquimias da Terra</div></div>
+    <div><div style="font:700 14px Inter;letter-spacing:.06em;word-spacing:.4em;color:var(--terra-d)">PRODUZIDO POR</div><div class="fr" style="font-size:24px;margin-top:4px">Liine Dias Freitas</div></div>
   </div>
 </section>
 
-<!-- 2. DIAGNÓSTICO -->
+<!-- 2. ANÁLISE DO PERFIL -->
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
-  <h2 class="t">Diagnóstico do perfil</h2>
-  <p class="lead">@portal.deusa tem 96 posts, 1.167 seguidores e segue 631 perfis.</p>
-  <div style="display:flex;gap:32px;margin-top:22px;align-items:flex-start">
+  <h2 class="t">Análise do perfil</h2>
+  <p class="lead">Observamos com carinho o perfil @portal.deusa, que reúne 96 publicações e 1.167 seguidores. Há muito conteúdo bonito e autêntico. Reunimos abaixo algumas oportunidades para destacar ainda mais o seu trabalho.</p>
+  <div style="display:flex;gap:30px;margin-top:20px;align-items:flex-start">
     <div class="shot">
       <img src="img/perfil.jpg" alt="Perfil atual do Instagram">
       <div class="zone" style="top:1%;height:10%"></div><span class="n" style="top:4%">1</span>
@@ -100,14 +100,14 @@ td:last-child small{font:600 13px Inter;text-align:right}
       <div class="zone" style="top:56%;height:43%"></div><span class="n" style="top:75%">5</span>
     </div>
     <div class="legend">
-      <div><span class="n">1</span><span><b>Nome.</b> O campo "nome" é pesquisável. Sugestão: <i>Portal da Deusa | Alquimias da Terra</i>.</span></div>
-      <div><span class="n">2</span><span><b>Bio.</b> É bonita, mas não diz o que vende nem como comprar. Falta um convite claro.</span></div>
-      <div><span class="n">3</span><span><b>Link.</b> Hoje leva ao Linktree. Com o site pronto, passa a levar ao catálogo.</span></div>
-      <div><span class="n">4</span><span><b>Destaques.</b> Já têm bom conteúdo. Falta padrão visual e uma ordem pensada para quem quer comprar.</span></div>
-      <div><span class="n">5</span><span><b>Grade.</b> Mistura estilos de arte, fotos pessoais e reels. Os cartazes de produto são fortes; falta ritmo e cor para parecer uma vitrine.</span></div>
-      <div class="card" style="display:block;padding:16px 20px;border-radius:14px;margin-top:2px;background:var(--sand)"><b style="color:var(--terra-d)">Ponto forte</b><br>Produtos reais, fotos do processo ("saindo da forma") e uma história autêntica. É isso que vende.</div>
+      <div><span class="n">1</span><span><b>Nome do perfil.</b> O campo “nome” é usado na busca do Instagram. Incluir “Alquimias da Terra” pode ajudar quem procura banhos, garrafadas e ervas a encontrar você com mais facilidade.</span></div>
+      <div><span class="n">2</span><span><b>Biografia.</b> A biografia já transmite a essência do seu trabalho. Podemos complementá-la com o que você oferece e com a forma de fazer um pedido, facilitando o contato de quem deseja comprar.</span></div>
+      <div><span class="n">3</span><span><b>Link.</b> Hoje o link leva ao Linktree. Com o site, ele poderá levar direto ao catálogo, em um só clique.</span></div>
+      <div><span class="n">4</span><span><b>Destaques.</b> Eles reúnem vivências, escalda-pés, vaporização e Chanupa Wakan, conteúdos muito valiosos. Podemos padronizar as capas com as cores da marca e organizar a ordem pensando em quem está conhecendo o seu trabalho.</span></div>
+      <div><span class="n">5</span><span><b>Visual do feed.</b> Os cartazes dos produtos são bonitos e informativos. Podemos criar uma harmonia entre cartazes, fotos e vídeos, usando as cores da marca, para que o perfil fique ainda mais reconhecível.</span></div>
     </div>
   </div>
+  <div class="card" style="margin-top:16px;padding:14px 22px;border-radius:14px"><b style="color:var(--terra-d)">O que já encanta</b><br>Produtos reais, bastidores do processo (como as fotos “saindo da forma”) e uma história autêntica. É isso que torna o seu trabalho especial, e é isso que vamos valorizar.</div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 2</span></div>
 </section>
 
@@ -115,7 +115,7 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Estudo de cores da marca</h2>
-  <p class="lead">Retiradas da logo da Desirê: o cálice alado, o verde-esmeralda e o dourado.</p>
+  <p class="lead">Cores extraídas da sua logo: o cálice alado, o verde-esmeralda e o dourado.</p>
   <div class="sw">
     <div style="background:#1f4d3a;color:#f6ecd6">Verde Esmeralda<small>#1F4D3A · base</small></div>
     <div style="background:#c9a24b;color:#2b2a22">Dourado<small>#C9A24B · destaque</small></div>
@@ -123,36 +123,36 @@ td:last-child small{font:600 13px Inter;text-align:right}
     <div style="background:#7a1f2b;color:#f6ecd6">Rubi<small>#7A1F2B · detalhes</small></div>
     <div style="background:#252e18;color:#f6ecd6">Musgo Escuro<small>#252E18 · texto</small></div>
   </div>
-  <div class="two" style="margin-top:28px">
+  <div class="two" style="margin-top:22px">
     <div class="card">
-      <h3>Como usar</h3>
+      <h3>Sugestão de uso</h3>
       <ul class="list">
-        <li><b>60%</b> pergaminho como fundo das artes</li>
-        <li><b>30%</b> verde em títulos, faixas e capas</li>
-        <li><b>10%</b> dourado e rubi só em detalhes</li>
-        <li>O cálice sempre no mesmo canto</li>
-        <li>Nos <b>Banhos</b>, cada planeta pode ter sua cor, mantendo moldura e fontes iguais</li>
+        <li><b>60%</b> pergaminho, como fundo das artes</li>
+        <li><b>30%</b> verde, em títulos, faixas e capas</li>
+        <li><b>10%</b> dourado e rubi, apenas em detalhes</li>
+        <li>Cálice sempre na mesma posição, como assinatura da marca</li>
+        <li>Nos <b>Banhos Planetários</b>, cada planeta pode ter uma cor própria, mantendo a moldura e a tipografia</li>
       </ul>
     </div>
     <div class="card">
-      <h3>Letras</h3>
+      <h3>Tipografia</h3>
       <p style="margin:10px 0 0;font:700 28px Cinzel,serif;color:#1f4d3a">Portal da Deusa</p>
-      <p style="margin:2px 0 14px;font-size:16px;color:var(--soft)">Para títulos e nomes de produtos. Pode manter a letra clássica da logo.</p>
-      <p style="margin:0;font:600 20px Inter;color:var(--ink)">Textos de legenda e artes</p>
-      <p style="margin:2px 0 0;font-size:16px;color:var(--soft)">Letra simples e grande, fácil de ler no celular.</p>
+      <p style="margin:2px 0 14px;font-size:16px;color:var(--soft)">Para títulos e nomes de produtos, mantendo a letra clássica da sua logo.</p>
+      <p style="margin:0;font:600 20px Inter;color:var(--ink)">Legendas e textos das artes</p>
+      <p style="margin:2px 0 0;font-size:16px;color:var(--soft)">Uma letra simples e grande, de fácil leitura no celular.</p>
     </div>
   </div>
-  <div class="card" style="margin-top:20px">
-    <h3>Ritmo do feed (proposta)</h3>
+  <div class="card" style="margin-top:16px;padding:20px 28px">
+    <h3>Sugestão de ritmo para o feed</h3>
     <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:12px">
       <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
       <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">FRASE<br>sabedoria</div>
       <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">FOTO<br>real</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">EDUCA<br>ervas</div>
+      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">DICA<br>de ervas</div>
       <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
       <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">FOTO<br>real</div>
     </div>
-    <p style="margin:14px 0 0;font-size:16.5px">Alternar cartaz, frase, foto e conteúdo educativo cria um ritmo reconhecível. Quem olha a grade entende a marca antes de ler a legenda.</p>
+    <p style="margin:14px 0 0;font-size:16.5px">Alternar cartaz, frase, foto e conteúdo educativo cria uma sequência harmoniosa. Quem visita o perfil compreende a marca já no primeiro olhar.</p>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 3</span></div>
 </section>
@@ -161,7 +161,7 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Criação de conteúdo</h2>
-  <p class="lead">Uma ideia que já é da marca: os planetas organizam a semana.</p>
+  <p class="lead">Uma ideia que já pertence à sua marca: os planetas organizam a semana.</p>
   <div class="two" style="margin-top:24px">
     <div class="card">
       <h3>Pilares</h3>
@@ -177,8 +177,8 @@ td:last-child small{font:600 13px Inter;text-align:right}
       <h3>Formatos</h3>
       <ul class="list">
         <li>Cartaz do produto, na paleta da marca</li>
-        <li>Carrossel educativo, como "e se a inflamação estiver tentando te mostrar algo?"</li>
-        <li>Reels curtos: processo, abrir a garrafada, montar o banho</li>
+        <li>Carrossel educativo, como “E se a inflamação estiver tentando te mostrar algo?”</li>
+        <li>Reels curtos: o processo, a abertura da garrafada e a montagem do banho</li>
         <li>Stories com enquete e caixinha de perguntas</li>
       </ul>
     </div>
@@ -188,15 +188,15 @@ td:last-child small{font:600 13px Inter;text-align:right}
     <div><b>DOM</b>Sol<i>vitalidade</i></div>
     <div><b>SEG</b>Lua<i>intuição</i></div>
     <div><b>TER</b>Marte<i>coragem</i></div>
-    <div><b>QUA</b>Mercúrio<i>mente</i></div>
+    <div><b>QUA</b>Mercúrio<i>diálogo</i></div>
     <div><b>QUI</b>Júpiter<i>expansão</i></div>
     <div><b>SEX</b>Vênus<i>amor</i></div>
     <div><b>SÁB</b>Saturno<i>proteção</i></div>
   </div>
-  <p style="margin:12px 0 0;font-size:16px;color:var(--soft)">Vênus e Saturno ainda não têm arte. Entram como lançamento, o que também gera expectativa.</p>
+  <p style="margin:12px 0 0;font-size:16px;color:var(--soft)">Vênus e Saturno ainda não têm arte. Podem entrar como lançamento, despertando a curiosidade do público.</p>
   <div class="card" style="margin-top:26px;background:var(--sand2)">
-    <h3>Cuidado com a comunicação de saúde</h3>
-    <p style="margin:6px 0 0;font-size:17px">A lista das garrafadas cita condições como diabetes, endometriose e depressão. Sugerimos escrever como <b>tradição e apoio ao bem-estar</b>, sem prometer cura ou tratamento, e manter a frase "não substitui orientação médica". Isso protege a Desirê e evita denúncias e bloqueios de conteúdo na plataforma.</p>
+    <h3>Um cuidado importante: comunicação sobre saúde</h3>
+    <p style="margin:6px 0 0;font-size:17px">A lista de garrafadas menciona condições como diabetes, endometriose e depressão. Sugerimos apresentar o conteúdo como <b>tradição e apoio ao bem-estar</b>, sem prometer cura ou tratamento, e manter o aviso de que ele não substitui a orientação médica. Assim, protegemos o seu perfil de denúncias e bloqueios na plataforma.</p>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 4</span></div>
 </section>
@@ -205,33 +205,33 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">O site da marca</h2>
-  <p class="lead">O protótipo já está feito, nas versões clara e escura.</p>
+  <p class="lead">O protótipo do site já foi desenvolvido, em versões clara e escura.</p>
   <div class="devs" style="margin-top:20px">
     <img src="img/site-desktop.png" alt="Site no computador" style="width:68%;margin:0 auto">
     <div style="display:flex;gap:14px;margin-top:16px">
-      <img src="img/site-celular-claro.png" alt="Catálogo no celular, versão clara" style="width:calc(50% - 7px);height:230px;object-fit:cover;object-position:top">
-      <img src="img/site-celular-escuro.png" alt="Catálogo no celular, versão escura" style="width:calc(50% - 7px);height:230px;object-fit:cover;object-position:top">
+      <img src="img/site-celular-claro.png" alt="Catálogo no celular, versão clara" style="width:calc(50% - 7px);height:200px;object-fit:cover;object-position:top">
+      <img src="img/site-celular-escuro.png" alt="Catálogo no celular, versão escura" style="width:calc(50% - 7px);height:200px;object-fit:cover;object-position:top">
     </div>
   </div>
   <div class="two" style="margin-top:20px">
     <div class="card" style="padding:20px 24px">
-      <h3 style="font-size:19px">Já está pronto</h3>
+      <h3 style="font-size:19px">Já desenvolvido</h3>
       <ul class="list" style="font-size:16.5px;gap:6px">
-        <li>Página inicial com a logo e a história</li>
-        <li>Catálogo de 16 itens com filtro</li>
-        <li>Ficha de cada produto: ervas, uso, preço</li>
-        <li>Versão clara e versão escura</li>
-        <li>Funciona bem no celular</li>
+        <li>Página inicial com a logo e a história da marca</li>
+        <li>Catálogo com 16 itens e filtro por categoria</li>
+        <li>Ficha de cada produto: ingredientes, modo de uso e preço</li>
+        <li>Versões clara e escura</li>
+        <li>Layout adaptado para celular</li>
       </ul>
     </div>
     <div class="card" style="padding:20px 24px">
-      <h3 style="font-size:19px">Próximos passos</h3>
+      <h3 style="font-size:19px">Próximas etapas</h3>
       <ul class="list" style="font-size:16.5px;gap:6px">
         <li>Botão de pedido pelo WhatsApp</li>
         <li>Endereço próprio (.com.br)</li>
         <li>Fotos reais dos produtos</li>
-        <li>Vênus e Saturno, quando houver arte</li>
-        <li>Loja com Pix e cartão, se a Desirê quiser</li>
+        <li>Artes de Vênus e Saturno, quando estiverem prontas</li>
+        <li>Loja com Pix e cartão, caso você deseje vender pelo site</li>
       </ul>
     </div>
   </div>
@@ -242,50 +242,50 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Planos mensais de redes sociais</h2>
-  <p class="lead">Escolha o ritmo que cabe hoje. Dá para mudar de plano depois.</p>
+  <p class="lead">Escolha o ritmo que melhor se encaixa no momento do seu negócio. É possível trocar de plano quando quiser.</p>
   <div class="plans" style="margin-top:34px">
     <div class="plan">
       <h3>Essencial</h3><div class="for">Para começar com constância</div>
       <ul>
         <li>1 rede social (Instagram)</li>
-        <li>8 posts por mês (2 por semana)</li>
-        <li>Artes na paleta da marca, com legenda e postagem</li>
+        <li>8 publicações por mês (2 por semana)</li>
+        <li>Artes na paleta da marca, com legenda e publicação</li>
         <li>4 stories por mês</li>
-        <li>Planejamento mensal</li>
-        <li>Revisão da bio e do link, grátis</li>
+        <li>Planejamento mensal de conteúdo</li>
+        <li>Revisão da biografia e do link, sem custo</li>
       </ul>
-      <div class="pr">R$ 600<small>POR MÊS</small></div>
+      <div class="pr">R$&nbsp;600<small>POR MÊS</small></div>
     </div>
     <div class="plan hl">
       <span class="badge">MAIS ESCOLHIDO</span>
-      <h3>Encanto</h3><div class="for">Para crescer com cara de marca</div>
+      <h3>Encanto</h3><div class="for">Para fortalecer a identidade da marca</div>
       <ul>
         <li>Até 2 redes sociais</li>
-        <li>12 posts por mês (3 por semana)</li>
-        <li>Artes, legenda e postagem</li>
+        <li>12 publicações por mês (3 por semana)</li>
+        <li>Artes, legenda e publicação</li>
         <li>8 stories por mês</li>
         <li>1 reel editado por mês</li>
-        <li>Semana dos planetas planejada</li>
-        <li>Enobrecimento do perfil, grátis</li>
+        <li>Calendário da semana dos planetas</li>
+        <li>Otimização do perfil, sem custo</li>
       </ul>
-      <div class="pr">R$ 900<small>POR MÊS</small></div>
+      <div class="pr">R$&nbsp;900<small>POR MÊS</small></div>
     </div>
     <div class="plan">
-      <h3>Portal</h3><div class="for">Para vender todo dia</div>
+      <h3>Portal</h3><div class="for">Para uma presença diária</div>
       <ul>
         <li>Até 2 redes sociais</li>
-        <li>20 posts por mês (5 por semana)</li>
-        <li>Artes, legenda e postagem</li>
+        <li>20 publicações por mês (5 por semana)</li>
+        <li>Artes, legenda e publicação</li>
         <li>12 stories por mês</li>
         <li>2 reels editados por mês</li>
-        <li>Perfil enobrecido e capas dos destaques</li>
+        <li>Otimização do perfil e capas dos destaques</li>
         <li>Relatório mensal de métricas</li>
-        <li>1 reunião mensal</li>
+        <li>1 reunião mensal de alinhamento</li>
       </ul>
-      <div class="pr">R$ 1.300<small>POR MÊS</small></div>
+      <div class="pr">R$&nbsp;1.300<small>POR MÊS</small></div>
     </div>
   </div>
-  <p style="margin:18px 0 0;font-size:16px;color:var(--soft)">As fotos e vídeos dos produtos são enviados pela Desirê. Impulsionamento pago fica à parte, conforme o valor que ela escolher investir.</p>
+  <p style="margin:18px 0 0;font-size:16px;color:var(--soft)">As fotos e os vídeos dos produtos são enviados por você. O impulsionamento pago é contratado à parte, conforme o valor que você decidir investir.</p>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 6</span></div>
 </section>
 
@@ -293,22 +293,22 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Site e marca</h2>
-  <p class="lead">Valores únicos, pagos uma vez.</p>
+  <p class="lead">Investimentos de pagamento único.</p>
   <div class="card" style="margin-top:22px">
     <h3>Site Portal da Deusa</h3>
     <table style="margin-top:6px">
-      <tr><td>Site Vitrine<small>Página inicial, catálogo, versões clara e escura, botão de pedido por WhatsApp, publicação no ar e endereço próprio configurado.</small></td><td>R$ 1.800<small>pagamento único</small></td></tr>
-      <tr><td>Manutenção mensal (opcional)<small>Troca de preços, novos produtos, ajustes e suporte.</small></td><td>R$ 120<small>por mês</small></td></tr>
-      <tr><td>Loja com Pix e cartão (opcional)<small>Carrinho e pagamento no site. Orçamento próprio, conforme o meio de pagamento.</small></td><td>a orçar</td></tr>
-      <tr><td>Custos de terceiros<small>Domínio .com.br em torno de R$ 40 por ano. Hospedagem de site simples costuma ser gratuita (confirmar na contratação).</small></td><td>pago pela cliente</td></tr>
+      <tr><td>Site Vitrine<small>Página inicial, catálogo, versões clara e escura, botão de pedido pelo WhatsApp, publicação e configuração do endereço próprio.</small></td><td>R$&nbsp;1.800<small>pagamento único</small></td></tr>
+      <tr><td>Manutenção mensal (opcional)<small>Atualização de preços e produtos, ajustes e suporte.</small></td><td>R$&nbsp;120<small>por mês</small></td></tr>
+      <tr><td>Loja com Pix e cartão (opcional)<small>Carrinho e pagamento no site. Orçamento específico, conforme o meio de pagamento escolhido.</small></td><td>a orçar</td></tr>
+      <tr><td>Custos de terceiros<small>Domínio .com.br em torno de R$&nbsp;40 por ano. A hospedagem de sites simples costuma ser gratuita (a confirmar na contratação).</small></td><td>por conta da cliente</td></tr>
     </table>
   </div>
   <div class="card" style="margin-top:20px">
     <h3>Marca e perfil</h3>
     <table style="margin-top:6px">
-      <tr><td>Guia de marca<small>Cores, letras, modelos de arte e regras de uso. A logo já existe e não é cobrada.</small></td><td>R$ 700</td></tr>
-      <tr><td>Enobrecimento do perfil<small>Nome, bio, link, foto e destaques de uma rede social.</small></td><td>R$ 299</td></tr>
-      <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td>R$ 150</td></tr>
+      <tr><td>Guia de marca<small>Cores, tipografia, modelos de arte e regras de uso. A sua logo já existe e não será cobrada.</small></td><td>R$&nbsp;700</td></tr>
+      <tr><td>Otimização do perfil<small>Nome, biografia, link, foto e destaques de uma rede social.</small></td><td>R$&nbsp;299</td></tr>
+      <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td>R$&nbsp;150</td></tr>
     </table>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 7</span></div>
@@ -317,28 +317,28 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <!-- 8. AVULSOS + PACOTE -->
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
-  <h2 class="t">Serviços avulsos e pacote de lançamento</h2>
+  <h2 class="t">Valores complementares</h2>
   <div class="card" style="margin-top:22px">
     <h3>Serviços avulsos</h3>
     <table style="margin-top:6px">
-      <tr><td>Arte para redes sociais</td><td>R$ 45</td></tr>
-      <tr><td>Arte com legenda e postagem</td><td>R$ 70</td></tr>
-      <tr><td>Reel editado</td><td>R$ 120</td></tr>
-      <tr><td>Pacote criativo, 10 artes</td><td>R$ 350</td></tr>
-      <tr><td>Pacote criativo, 15 artes + 5 stories ou reels</td><td>R$ 550</td></tr>
+      <tr><td>Arte para redes sociais</td><td>R$&nbsp;45</td></tr>
+      <tr><td>Arte com legenda e publicação</td><td>R$&nbsp;70</td></tr>
+      <tr><td>Reel editado</td><td>R$&nbsp;120</td></tr>
+      <tr><td>Pacote criativo com 10 artes</td><td>R$&nbsp;350</td></tr>
+      <tr><td>Pacote criativo com 15 artes e 5 stories ou reels</td><td>R$&nbsp;550</td></tr>
     </table>
   </div>
   <div class="card" style="margin-top:22px;background:var(--olive);color:#fff;padding:28px 30px">
     <h3 style="color:#fff;font-size:25px">Pacote de lançamento</h3>
-    <p style="margin:6px 0 14px;font-size:17.5px">Tudo o que a marca precisa para entrar no digital organizada.</p>
+    <p style="margin:6px 0 14px;font-size:17.5px">Tudo o que a marca precisa para começar organizada no ambiente digital.</p>
     <table style="color:#fff">
-      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca + Enobrecimento do perfil<small style="color:#e9dcb8">R$ 1.800 + R$ 700 + R$ 299, pagos uma vez</small></td><td style="color:#fff;border-color:#ffffff44">R$ 2.799</td></tr>
-      <tr><td>Plano Encanto<small style="color:#e9dcb8">a partir do primeiro mês</small></td><td style="color:#fff">R$ 900<small style="color:#e9dcb8">por mês</small></td></tr>
+      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca + Otimização do perfil<small style="color:#e9dcb8">R$&nbsp;1.800 + R$&nbsp;700 + R$&nbsp;299, em pagamento único</small></td><td style="color:#fff;border-color:#ffffff44">R$&nbsp;2.799</td></tr>
+      <tr><td>Plano Encanto<small style="color:#e9dcb8">a partir do primeiro mês</small></td><td style="color:#fff">R$&nbsp;900<small style="color:#e9dcb8">por mês</small></td></tr>
     </table>
   </div>
   <div class="card" style="margin-top:22px;background:var(--sand2)">
-    <h3>Como definimos esses valores</h3>
-    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Quem está começando costuma cobrar de R$ 800 a R$ 1.500 por mês na gestão de redes; um site simples custa de R$ 500 a R$ 3.000. Nossos planos partem abaixo disso porque o perfil está em fase inicial e este é um projeto de lançamento.</p>
+    <h3>Como chegamos a esses valores</h3>
+    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Profissionais iniciantes costumam cobrar de R$&nbsp;800 a R$&nbsp;1.500 por mês pela gestão de redes sociais, e um site simples custa de R$&nbsp;500 a R$&nbsp;3.000. Os valores propostos ficam abaixo dessa faixa porque o perfil está em fase inicial e este é um projeto de lançamento.</p>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 8</span></div>
 </section>
@@ -346,36 +346,36 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <!-- 9. FECHAMENTO -->
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
-  <h2 class="t">Combinados e próximos passos</h2>
+  <h2 class="t">Condições e etapas</h2>
   <div class="two" style="margin-top:22px;align-items:start">
     <div class="card note">
-      <h3>Combinados</h3>
+      <h3>Condições gerais</h3>
       <ol>
-        <li>A logo existente define a paleta. Nada novo é criado sem aprovação.</li>
-        <li>Artes avulsas não incluem legenda nem postagem, salvo no item indicado.</li>
-        <li>Os horários de postagem são testados nas primeiras semanas.</li>
-        <li>Toda arte é enviada para aprovação antes de postar.</li>
-        <li>O plano pode mudar conforme as métricas.</li>
-        <li>Pesquisas de conteúdo muito específicas podem ter custo extra.</li>
+        <li>A logo existente define a paleta de cores. Nenhuma alteração será feita sem a sua aprovação.</li>
+        <li>Artes avulsas não incluem legenda nem publicação, exceto onde indicado.</li>
+        <li>Os horários de publicação serão testados nas primeiras semanas, para identificar quando há mais engajamento.</li>
+        <li>Toda arte será enviada para a sua aprovação antes de ser publicada.</li>
+        <li>O plano poderá ser ajustado conforme os resultados das métricas.</li>
+        <li>Pesquisas de conteúdo muito específicas podem ter custo adicional.</li>
       </ol>
     </div>
     <div class="card note">
-      <h3>Próximos passos</h3>
+      <h3>Próximas etapas</h3>
       <ol>
         <li>Conversa para alinhar escopo e prioridades.</li>
         <li>Escolha do plano e do pacote.</li>
-        <li>Envio das fotos e vídeos dos produtos.</li>
-        <li>Guia de marca e novo perfil no ar.</li>
-        <li>Site publicado com o endereço escolhido.</li>
+        <li>Envio das fotos e dos vídeos dos produtos.</li>
+        <li>Entrega do guia de marca e publicação do perfil atualizado.</li>
+        <li>Publicação do site com o endereço escolhido.</li>
         <li>Início do calendário de conteúdo.</li>
       </ol>
     </div>
   </div>
   <div class="card" style="margin-top:22px;background:var(--sand2)">
-    <h3>Base da pesquisa de preços</h3>
-    <p class="src" style="margin:6px 0 0">Gestão de redes: iniciantes de R$ 800 a R$ 1.500 por cliente/mês; gestão básica de 1 rede com 12 posts, de R$ 1.200 a R$ 2.500 (Jamile Fernandez; FreelaSemCrise). Site simples ou one page: R$ 500 a R$ 3.000; institucional simples: R$ 1.500 a R$ 5.000; loja virtual: a partir de cerca de R$ 6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Logo: R$ 300 a R$ 5.000; manual de marca: R$ 2.500 a R$ 8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: R$ 800 a R$ 1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais, e os valores desta proposta podem ser ajustados.</p>
+    <h3>Referências da pesquisa de preços</h3>
+    <p class="src" style="margin:6px 0 0">Gestão de redes: profissionais iniciantes cobram de R$&nbsp;800 a R$&nbsp;1.500 por cliente ao mês; a gestão básica de 1 rede com 12 publicações fica entre R$&nbsp;1.200 e R$&nbsp;2.500 (Jamile Fernandez; FreelaSemCrise). Sites: simples ou de página única, de R$&nbsp;500 a R$&nbsp;3.000; institucionais simples, de R$&nbsp;1.500 a R$&nbsp;5.000; lojas virtuais, a partir de cerca de R$&nbsp;6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Identidade visual: logo de R$&nbsp;300 a R$&nbsp;5.000; manual de marca de R$&nbsp;2.500 a R$&nbsp;8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: de R$&nbsp;800 a R$&nbsp;1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais, e os valores desta proposta podem ser ajustados.</p>
   </div>
-  <div style="margin-top:38px"><div class="fr" style="font-size:26px;line-height:1.2;color:var(--olive)">Vamos dar vida digital ao Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Liine Dias Freitas</div></div>
+  <div style="margin-top:18px"><div class="fr" style="font-size:22px;line-height:1.3;color:var(--olive)">Será um prazer cuidar da presença digital do Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Liine Dias Freitas</div></div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 9</span></div>
 </section>
 
