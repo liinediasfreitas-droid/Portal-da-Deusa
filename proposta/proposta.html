@@ -31,7 +31,7 @@ b,strong{font-weight:700}
 .shot img{width:100%;display:block;border-radius:14px;box-shadow:0 0 0 2px var(--line)}
 .n{position:absolute;right:-14px;width:30px;height:30px;border-radius:50%;background:var(--terra-d);color:#fff;font:700 15px Inter;display:grid;place-items:center;box-shadow:0 0 0 3px var(--bg)}
 .zone{position:absolute;left:0;right:0;border:2.5px solid var(--terra);border-radius:10px}
-.legend{display:flex;flex-direction:column;gap:12px;flex:1;min-width:0}
+.legend{display:flex;flex-direction:column;gap:10px;flex:1;min-width:0}
 .legend>div{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15px;line-height:1.4}
 .legend .n{position:static;box-shadow:none}
 .sw{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}
@@ -42,19 +42,19 @@ b,strong{font-weight:700}
 .week b{display:block;font:700 13px Inter;letter-spacing:.06em;color:var(--terra-d);margin-bottom:4px}
 .week i{display:block;font-style:normal;color:var(--soft);font-size:13.5px;margin-top:3px}
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
-.plan{background:var(--sand);border-radius:20px;padding:30px 22px 22px;display:flex;flex-direction:column;height:700px;position:relative}
+.plan{background:var(--sand);border-radius:20px;padding:26px 22px 20px;display:flex;flex-direction:column;position:relative}
 .plan.hl{background:var(--olive);color:#fff}
 .plan.hl h3,.plan.hl .pr{color:#fff}
 .plan h3{font-size:25px;margin-bottom:4px}
-.plan .for{font-size:15px;color:var(--soft);margin-bottom:16px}
+.plan .for{font-size:15px;color:var(--soft);margin-bottom:12px}
 .plan.hl .for{color:#e9dcb8}
-.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.35}
+.plan ul{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15.5px;line-height:1.35}
 .plan li{padding-left:24px;position:relative}
 .plan li:before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--olive)}
 .plan.hl li:before{color:#e7c875}
-.pr{margin-top:auto;border-top:2px solid var(--line);padding-top:14px;font:700 32px Cinzel,serif;color:var(--olive)}
+.pr{margin-top:auto;border-top:2px solid var(--line);padding-top:12px}
 .plan.hl .pr{border-color:#ffffff66}
-.pr small{display:block;font:600 14px Inter;letter-spacing:.04em;word-spacing:.3em;opacity:.85}
+.pr small,.seed small{display:block;font:600 12px Inter;letter-spacing:.03em;word-spacing:.2em;opacity:.9;color:inherit}
 .badge{position:absolute;top:-14px;left:22px;background:var(--terra);color:var(--ink);font:700 13px Inter;letter-spacing:.05em;word-spacing:.4em;padding:6px 12px;border-radius:6px}
 table{width:100%;border-collapse:collapse;font-size:17.5px}
 td{padding:11px 0;border-bottom:1.5px dashed var(--line);vertical-align:top}
@@ -65,9 +65,41 @@ td:last-child small{font:600 13px Inter;text-align:right}
 .note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:5px;font-size:16px;line-height:1.38}
 .src{font-size:13.5px;line-height:1.4;color:var(--soft)}
 .devs img{display:block;border-radius:12px;box-shadow:0 0 0 2px var(--line)}
+
+.old{display:block;font:600 14px Inter;color:var(--soft);text-decoration:line-through;text-decoration-thickness:1.5px;word-spacing:0}
+.pr .now,.seed .now{display:block;font:700 34px Cinzel,serif;color:var(--olive);line-height:1.15}
+.plan.hl .pr .old{color:#e9dcb8}
+.plan.hl .pr .now{color:#fff}
+.seed{display:flex;gap:22px;align-items:center;justify-content:space-between;background:var(--sand2);border-radius:16px;padding:16px 24px;margin-top:14px}
+.seed h3{font-size:20px;margin-bottom:4px}
+.seed p{margin:0;font-size:15.5px;line-height:1.4}
+.seed .sp{flex:none;width:206px;border-left:2px solid var(--line);padding-left:20px}
+.seed small{color:var(--soft)}
+td.pc{text-align:right;white-space:nowrap;padding-left:16px}
+td.pc .now{display:block;font:700 19px Cinzel,serif;color:var(--olive);line-height:1.2}
+td.pc .old{font-size:13px;margin-bottom:1px}
+td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
+.pils{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:24px}
+.pil{background:var(--sand);border-radius:14px;padding:18px 8px;text-align:center}
+.pil svg{width:32px;height:32px;stroke:var(--terra-d);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pil b{display:block;font:700 15px Cinzel,serif;color:var(--ink);margin:8px 0 4px;line-height:1.2;word-spacing:.1em}
+.pil span{display:block;font-size:14px;color:var(--soft);line-height:1.3}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:22px}
+.steps div{background:var(--sand);border-radius:14px;padding:16px 8px;text-align:center;font-size:14.5px;line-height:1.3}
+.steps b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--terra-d);color:#fff;font:700 15px Inter;margin:0 auto 10px}
+.note ol{margin:8px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:9px;font-size:16.5px;line-height:1.42}
+.tight td{padding:8px 0}
+.tight td.pc{padding:8px 0 8px 16px}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14M5 19c3-4 6-7 10-9"/></symbol>
+<symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 3h4v4l2 3v10a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V10l2-3z"/><path d="M8 13h8"/></symbol>
+<symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 12h18a9 8 0 0 1-18 0z"/><path d="M8 8c0-1.5 1-1.5 1-3M12 8c0-1.5 1-1.5 1-3M16 8c0-1.5 1-1.5 1-3"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></symbol>
+</defs></svg>
 
 <!-- 1. CAPA -->
 <section class="page cover" style="padding:0;background:var(--bg)">
@@ -100,14 +132,14 @@ td:last-child small{font:600 13px Inter;text-align:right}
       <div class="zone" style="top:56%;height:43%"></div><span class="n" style="top:75%">5</span>
     </div>
     <div class="legend">
-      <div><span class="n">1</span><span><b>Nome do perfil.</b> O campo “nome” é usado na busca do Instagram. Incluir “Alquimias da Terra” pode ajudar quem procura banhos, garrafadas e ervas a encontrar você com mais facilidade.</span></div>
-      <div><span class="n">2</span><span><b>Biografia.</b> A biografia já transmite a essência do seu trabalho. Podemos complementá-la com o que você oferece e com a forma de fazer um pedido, facilitando o contato de quem deseja comprar.</span></div>
+      <div><span class="n">1</span><span><b>Nome do perfil.</b> É o nome em destaque no alto do perfil, e o Instagram o considera nas buscas. Quem procura “garrafadas” encontra com mais facilidade perfis que tenham essa palavra no nome. Sugestão: “Portal da Deusa | Garrafadas” (o limite é de 30 caracteres).</span></div>
+      <div><span class="n">2</span><span><b>Biografia.</b> A biografia já transmite a essência do seu trabalho. Podemos acrescentar o que você oferece e como fazer um pedido, para facilitar o contato de quem deseja comprar.</span></div>
       <div><span class="n">3</span><span><b>Link.</b> Hoje o link leva ao Linktree. Com o site, ele poderá levar direto ao catálogo, em um só clique.</span></div>
-      <div><span class="n">4</span><span><b>Destaques.</b> Eles reúnem vivências, escalda-pés, vaporização e Chanupa Wakan, conteúdos muito valiosos. Podemos padronizar as capas com as cores da marca e organizar a ordem pensando em quem está conhecendo o seu trabalho.</span></div>
-      <div><span class="n">5</span><span><b>Visual do feed.</b> Os cartazes dos produtos são bonitos e informativos. Podemos criar uma harmonia entre cartazes, fotos e vídeos, usando as cores da marca, para que o perfil fique ainda mais reconhecível.</span></div>
+      <div><span class="n">4</span><span><b>Destaques.</b> Eles reúnem conteúdos muito valiosos, como vivências, escalda-pés e vaporização. Podemos padronizar as capas com as cores da marca e organizar a ordem para quem está conhecendo o seu trabalho.</span></div>
+      <div><span class="n">5</span><span><b>Visual do feed.</b> Os cartazes dos produtos são bonitos e informativos. Podemos criar harmonia entre cartazes, fotos e vídeos, com as cores da marca, para o perfil ficar ainda mais reconhecível.</span></div>
     </div>
   </div>
-  <div class="card" style="margin-top:16px;padding:14px 22px;border-radius:14px"><b style="color:var(--terra-d)">O que já encanta</b><br>Produtos reais, bastidores do processo (como as fotos “saindo da forma”) e uma história autêntica. É isso que torna o seu trabalho especial, e é isso que vamos valorizar.</div>
+  <div class="card" style="margin-top:12px;padding:12px 22px;border-radius:14px"><b style="color:var(--terra-d)">O que já encanta</b><br>Produtos reais, bastidores do processo (como as fotos “saindo da forma”) e uma história autêntica. É isso que torna o seu trabalho especial, e é isso que vamos valorizar.</div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 2</span></div>
 </section>
 
@@ -116,14 +148,14 @@ td:last-child small{font:600 13px Inter;text-align:right}
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Estudo de cores da marca</h2>
   <p class="lead">Cores extraídas da sua logo: o cálice alado, o verde-esmeralda e o dourado.</p>
-  <div class="sw">
+  <div class="sw" style="margin-top:26px">
     <div style="background:#1f4d3a;color:#f6ecd6">Verde Esmeralda<small>#1F4D3A · base</small></div>
     <div style="background:#c9a24b;color:#2b2a22">Dourado<small>#C9A24B · destaque</small></div>
     <div style="background:#f3e9d2;color:#2b2a22">Pergaminho<small>#F3E9D2 · fundo</small></div>
     <div style="background:#7a1f2b;color:#f6ecd6">Rubi<small>#7A1F2B · detalhes</small></div>
     <div style="background:#252e18;color:#f6ecd6">Musgo Escuro<small>#252E18 · texto</small></div>
   </div>
-  <div class="two" style="margin-top:22px">
+  <div class="two" style="margin-top:28px">
     <div class="card">
       <h3>Sugestão de uso</h3>
       <ul class="list">
@@ -142,18 +174,6 @@ td:last-child small{font:600 13px Inter;text-align:right}
       <p style="margin:2px 0 0;font-size:16px;color:var(--soft)">Uma letra simples e grande, de fácil leitura no celular.</p>
     </div>
   </div>
-  <div class="card" style="margin-top:16px;padding:20px 28px">
-    <h3>Sugestão de ritmo para o feed</h3>
-    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:12px">
-      <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">FRASE<br>sabedoria</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">FOTO<br>real</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#f3e9d2;text-align:center">DICA<br>de ervas</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#f3e9d2;box-shadow:inset 0 0 0 2px #1f4d3a;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">CARTAZ<br>produto</div>
-      <div style="aspect-ratio:1;border-radius:14px;background:#d9c48e;display:grid;place-items:center;font:700 13px Inter;color:#1f4d3a;text-align:center">FOTO<br>real</div>
-    </div>
-    <p style="margin:14px 0 0;font-size:16.5px">Alternar cartaz, frase, foto e conteúdo educativo cria uma sequência harmoniosa. Quem visita o perfil compreende a marca já no primeiro olhar.</p>
-  </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 3</span></div>
 </section>
 
@@ -161,29 +181,15 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Criação de conteúdo</h2>
-  <p class="lead">Uma ideia que já pertence à sua marca: os planetas organizam a semana.</p>
-  <div class="two" style="margin-top:24px">
-    <div class="card">
-      <h3>Pilares</h3>
-      <ul class="list">
-        <li><b>Banhos Planetários:</b> o banho do dia, ervas e ritual</li>
-        <li><b>Garrafadas:</b> composição, preparo e cuidados</li>
-        <li><b>Ervas e chás:</b> cada planta e seu uso tradicional</li>
-        <li><b>Vivências:</b> bastidores, escalda-pés, vaporização</li>
-        <li><b>Confiança:</b> depoimentos e perguntas frequentes</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Formatos</h3>
-      <ul class="list">
-        <li>Cartaz do produto, na paleta da marca</li>
-        <li>Carrossel educativo, como “E se a inflamação estiver tentando te mostrar algo?”</li>
-        <li>Reels curtos: o processo, a abertura da garrafada e a montagem do banho</li>
-        <li>Stories com enquete e caixinha de perguntas</li>
-      </ul>
-    </div>
+  <p class="lead">Cinco assuntos que contam a sua história, organizados em uma semana de publicações.</p>
+  <div class="pils">
+    <div class="pil"><svg><use href="#i-bowl"/></svg><b>Banhos Planetários</b><span>o banho do dia</span></div>
+    <div class="pil"><svg><use href="#i-bottle"/></svg><b>Garrafadas</b><span>ingredientes e cuidados</span></div>
+    <div class="pil"><svg><use href="#i-leaf"/></svg><b>Ervas e chás</b><span>usos tradicionais</span></div>
+    <div class="pil"><svg><use href="#i-spark"/></svg><b>Vivências</b><span>bastidores e rituais</span></div>
+    <div class="pil"><svg><use href="#i-heart"/></svg><b>Confiança</b><span>depoimentos e dúvidas</span></div>
   </div>
-  <h3 style="font-size:24px;margin:30px 0 0">Semana-modelo</h3>
+  <h3 style="font-size:24px;margin:34px 0 0">Uma semana de exemplo</h3>
   <div class="week">
     <div><b>DOM</b>Sol<i>vitalidade</i></div>
     <div><b>SEG</b>Lua<i>intuição</i></div>
@@ -194,9 +200,13 @@ td:last-child small{font:600 13px Inter;text-align:right}
     <div><b>SÁB</b>Saturno<i>proteção</i></div>
   </div>
   <p style="margin:12px 0 0;font-size:16px;color:var(--soft)">Vênus e Saturno ainda não têm arte. Podem entrar como lançamento, despertando a curiosidade do público.</p>
-  <div class="card" style="margin-top:26px;background:var(--sand2)">
-    <h3>Um cuidado importante: comunicação sobre saúde</h3>
-    <p style="margin:6px 0 0;font-size:17px">A lista de garrafadas menciona condições como diabetes, endometriose e depressão. Sugerimos apresentar o conteúdo como <b>tradição e apoio ao bem-estar</b>, sem prometer cura ou tratamento, e manter o aviso de que ele não substitui a orientação médica. Assim, protegemos o seu perfil de denúncias e bloqueios na plataforma.</p>
+  <div class="card" style="margin-top:28px">
+    <h3>Como trabalhamos o conteúdo</h3>
+    <ul class="list">
+      <li>Planejamos o mês junto com você.</li>
+      <li>Criamos as artes e as legendas no padrão da marca.</li>
+      <li>Você aprova tudo antes de publicar.</li>
+    </ul>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 4</span></div>
 </section>
@@ -242,8 +252,8 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Planos mensais de redes sociais</h2>
-  <p class="lead">Escolha o ritmo que melhor se encaixa no momento do seu negócio. É possível trocar de plano quando quiser.</p>
-  <div class="plans" style="margin-top:34px">
+  <p class="lead">Condição especial de lançamento nos 3 primeiros meses. Depois, vale o valor regular, que você já conhece desde hoje.</p>
+  <div class="plans" style="margin-top:26px">
     <div class="plan">
       <h3>Essencial</h3><div class="for">Para começar com constância</div>
       <ul>
@@ -254,7 +264,7 @@ td:last-child small{font:600 13px Inter;text-align:right}
         <li>Planejamento mensal de conteúdo</li>
         <li>Revisão da biografia e do link, sem custo</li>
       </ul>
-      <div class="pr">R$&nbsp;600<small>POR MÊS</small></div>
+      <div class="pr"><span class="old">De R$&nbsp;600 por mês</span><span class="now">R$&nbsp;179</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
     <div class="plan hl">
       <span class="badge">MAIS ESCOLHIDO</span>
@@ -268,7 +278,7 @@ td:last-child small{font:600 13px Inter;text-align:right}
         <li>Calendário da semana dos planetas</li>
         <li>Otimização do perfil, sem custo</li>
       </ul>
-      <div class="pr">R$&nbsp;900<small>POR MÊS</small></div>
+      <div class="pr"><span class="old">De R$&nbsp;900 por mês</span><span class="now">R$&nbsp;279</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
     <div class="plan">
       <h3>Portal</h3><div class="for">Para uma presença diária</div>
@@ -282,10 +292,16 @@ td:last-child small{font:600 13px Inter;text-align:right}
         <li>Relatório mensal de métricas</li>
         <li>1 reunião mensal de alinhamento</li>
       </ul>
-      <div class="pr">R$&nbsp;1.300<small>POR MÊS</small></div>
+      <div class="pr"><span class="old">De R$&nbsp;1.300 por mês</span><span class="now">R$&nbsp;379</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
   </div>
-  <p style="margin:18px 0 0;font-size:16px;color:var(--soft)">As fotos e os vídeos dos produtos são enviados por você. O impulsionamento pago é contratado à parte, conforme o valor que você decidir investir.</p>
+  <div class="seed">
+    <div>
+      <h3>Plano Semente · só conteúdo</h3>
+      <p>8 artes e 8 legendas por mês, prontas para você publicar, ou a revisão do conteúdo que você já cria. Você começa pelo conteúdo e, quando quiser, evolui para a gestão completa.</p>
+    </div>
+    <div class="sp"><span class="old">De R$&nbsp;250 por mês</span><span class="now">R$&nbsp;79</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
+  </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 6</span></div>
 </section>
 
@@ -293,90 +309,102 @@ td:last-child small{font:600 13px Inter;text-align:right}
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Site e marca</h2>
-  <p class="lead">Investimentos de pagamento único.</p>
-  <div class="card" style="margin-top:22px">
+  <p class="lead">O valor regular aparece riscado. O valor de lançamento é a condição especial para os primeiros projetos.</p>
+  <div class="card" style="margin-top:20px">
     <h3>Site Portal da Deusa</h3>
     <table style="margin-top:6px">
-      <tr><td>Site Vitrine<small>Página inicial, catálogo, versões clara e escura, botão de pedido pelo WhatsApp, publicação e configuração do endereço próprio.</small></td><td>R$&nbsp;1.800<small>pagamento único</small></td></tr>
-      <tr><td>Manutenção mensal (opcional)<small>Atualização de preços e produtos, ajustes e suporte.</small></td><td>R$&nbsp;120<small>por mês</small></td></tr>
-      <tr><td>Loja com Pix e cartão (opcional)<small>Carrinho e pagamento no site. Orçamento específico, conforme o meio de pagamento escolhido.</small></td><td>a orçar</td></tr>
-      <tr><td>Custos de terceiros<small>Domínio .com.br em torno de R$&nbsp;40 por ano. A hospedagem de sites simples costuma ser gratuita (a confirmar na contratação).</small></td><td>por conta da cliente</td></tr>
+      <tr><td>Site Vitrine<small>Página inicial, catálogo, versões clara e escura, botão de pedido pelo WhatsApp, publicação e configuração do endereço próprio.</small></td><td class="pc"><span class="old">R$&nbsp;1.800</span><span class="now">R$&nbsp;790</span><small>pagamento único</small></td></tr>
+      <tr><td>Manutenção mensal (opcional)<small>Atualização de preços e produtos, ajustes e suporte.</small></td><td class="pc"><span class="old">R$&nbsp;120</span><span class="now">R$&nbsp;59</span><small>por mês</small></td></tr>
+      <tr><td>Loja com Pix e cartão (opcional)<small>Carrinho e pagamento no site. Orçamento específico, conforme o meio de pagamento escolhido.</small></td><td class="pc"><span class="now">a orçar</span></td></tr>
+      <tr><td>Custos de terceiros<small>Domínio .com.br em torno de R$&nbsp;40 por ano. A hospedagem de sites simples costuma ser gratuita (a confirmar na contratação).</small></td><td class="pc"><small>por conta da cliente</small></td></tr>
     </table>
   </div>
-  <div class="card" style="margin-top:20px">
+  <div class="card" style="margin-top:18px">
     <h3>Marca e perfil</h3>
     <table style="margin-top:6px">
-      <tr><td>Guia de marca<small>Cores, tipografia, modelos de arte e regras de uso. A sua logo já existe e não será cobrada.</small></td><td>R$&nbsp;700</td></tr>
-      <tr><td>Otimização do perfil<small>Nome, biografia, link, foto e destaques de uma rede social.</small></td><td>R$&nbsp;299</td></tr>
-      <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td>R$&nbsp;150</td></tr>
+      <tr><td>Guia de marca (opcional)<small>Documento de 8 a 10 páginas com regras de uso da logo, paleta de cores com códigos, tipografia, 6 modelos de arte editáveis (cartaz de produto, frase, dica de erva, banho do dia, capa de destaque e story) e orientações de tom de voz. A sua logo já existe e não será cobrada.</small></td><td class="pc"><span class="old">R$&nbsp;450</span><span class="now">R$&nbsp;149</span><small>pagamento único</small></td></tr>
+      <tr><td>Otimização do perfil<small>Nome, biografia, link, foto e destaques de uma rede social. Sem custo nos planos Encanto e Portal.</small></td><td class="pc"><span class="old">R$&nbsp;199</span><span class="now">R$&nbsp;79</span></td></tr>
+      <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td class="pc"><span class="old">R$&nbsp;90</span><span class="now">R$&nbsp;49</span></td></tr>
     </table>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 7</span></div>
 </section>
 
-<!-- 8. AVULSOS + PACOTE -->
+<!-- 8. VALORES COMPLEMENTARES -->
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Valores complementares</h2>
-  <div class="card" style="margin-top:22px">
-    <h3>Serviços avulsos</h3>
-    <table style="margin-top:6px">
-      <tr><td>Arte para redes sociais</td><td>R$&nbsp;45</td></tr>
-      <tr><td>Arte com legenda e publicação</td><td>R$&nbsp;70</td></tr>
-      <tr><td>Reel editado</td><td>R$&nbsp;120</td></tr>
-      <tr><td>Pacote criativo com 10 artes</td><td>R$&nbsp;350</td></tr>
-      <tr><td>Pacote criativo com 15 artes e 5 stories ou reels</td><td>R$&nbsp;550</td></tr>
+  <div class="card" style="margin-top:18px;padding:20px 28px">
+    <h3>Artes e vídeos</h3>
+    <table class="tight" style="margin-top:2px">
+      <tr><td>Arte para redes sociais (publicação ou story)</td><td class="pc"><span class="now">R$&nbsp;25</span></td></tr>
+      <tr><td>Pacote com 10 artes</td><td class="pc"><span class="now">R$&nbsp;179</span></td></tr>
+      <tr><td>Pacote com 20 artes</td><td class="pc"><span class="now">R$&nbsp;299</span></td></tr>
+      <tr><td>Reel editado</td><td class="pc"><span class="now">R$&nbsp;90</span></td></tr>
+      <tr><td>Revisão e padronização de 8 publicações que você já criou (texto e arte)</td><td class="pc"><span class="now">R$&nbsp;69</span></td></tr>
+    </table>
+    <h3 style="margin-top:14px">Textos e legendas, por pacote</h3>
+    <table class="tight" style="margin-top:2px">
+      <tr><td>Pacote com 8 legendas<small>Cada legenda inclui chamada para ação e hashtags.</small></td><td class="pc"><span class="now">R$&nbsp;79</span></td></tr>
+      <tr><td>Pacote com 12 legendas</td><td class="pc"><span class="now">R$&nbsp;109</span></td></tr>
+      <tr><td>Pacote com 20 legendas</td><td class="pc"><span class="now">R$&nbsp;169</span></td></tr>
     </table>
   </div>
-  <div class="card" style="margin-top:22px;background:var(--olive);color:#fff;padding:28px 30px">
-    <h3 style="color:#fff;font-size:25px">Pacote de lançamento</h3>
-    <p style="margin:6px 0 14px;font-size:17.5px">Tudo o que a marca precisa para começar organizada no ambiente digital.</p>
-    <table style="color:#fff">
-      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca + Otimização do perfil<small style="color:#e9dcb8">R$&nbsp;1.800 + R$&nbsp;700 + R$&nbsp;299, em pagamento único</small></td><td style="color:#fff;border-color:#ffffff44">R$&nbsp;2.799</td></tr>
-      <tr><td>Plano Encanto<small style="color:#e9dcb8">a partir do primeiro mês</small></td><td style="color:#fff">R$&nbsp;900<small style="color:#e9dcb8">por mês</small></td></tr>
+  <div class="card" style="margin-top:16px;background:var(--olive);color:#fff;padding:22px 30px">
+    <h3 style="color:#fff;font-size:24px">Pacote de lançamento</h3>
+    <p style="margin:4px 0 10px;font-size:16.5px">Site, guia de marca e 3 meses do plano Encanto, em um só pacote.</p>
+    <table class="tight" style="color:#fff">
+      <tr><td style="border-color:#ffffff44">Site Vitrine + Guia de marca<small style="color:#e9dcb8">R$&nbsp;790 + R$&nbsp;149, pagamento único</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;939</span></td></tr>
+      <tr><td style="border-color:#ffffff44">Plano Encanto, com otimização do perfil sem custo<small style="color:#e9dcb8">3 meses a R$&nbsp;279 por mês</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;837</span></td></tr>
+      <tr><td><b>Total do pacote</b><small style="color:#e9dcb8">No valor regular, o mesmo conjunto custaria R$&nbsp;4.950</small></td><td class="pc"><span class="now" style="color:#fff">R$&nbsp;1.776</span></td></tr>
     </table>
-  </div>
-  <div class="card" style="margin-top:22px;background:var(--sand2)">
-    <h3>Como chegamos a esses valores</h3>
-    <p style="margin:6px 0 0;font-size:16.5px">Comparamos tabelas de mercado de 2026. Profissionais iniciantes costumam cobrar de R$&nbsp;800 a R$&nbsp;1.500 por mês pela gestão de redes sociais, e um site simples custa de R$&nbsp;500 a R$&nbsp;3.000. Os valores propostos ficam abaixo dessa faixa porque o perfil está em fase inicial e este é um projeto de lançamento.</p>
+    <p style="margin:12px 0 0;font-size:16px;color:#e9dcb8">À vista no Pix ou em até 12x no cartão, pelo Mercado Pago.</p>
   </div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 8</span></div>
 </section>
 
-<!-- 9. FECHAMENTO -->
+<!-- 9. PAGAMENTO E CONDIÇÕES -->
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
-  <h2 class="t">Condições e etapas</h2>
-  <div class="two" style="margin-top:22px;align-items:start">
-    <div class="card note">
-      <h3>Condições gerais</h3>
-      <ol>
-        <li>A logo existente define a paleta de cores. Nenhuma alteração será feita sem a sua aprovação.</li>
-        <li>Artes avulsas não incluem legenda nem publicação, exceto onde indicado.</li>
-        <li>Os horários de publicação serão testados nas primeiras semanas, para identificar quando há mais engajamento.</li>
-        <li>Toda arte será enviada para a sua aprovação antes de ser publicada.</li>
-        <li>O plano poderá ser ajustado conforme os resultados das métricas.</li>
-        <li>Pesquisas de conteúdo muito específicas podem ter custo adicional.</li>
-      </ol>
-    </div>
-    <div class="card note">
-      <h3>Próximas etapas</h3>
-      <ol>
-        <li>Conversa para alinhar escopo e prioridades.</li>
-        <li>Escolha do plano e do pacote.</li>
-        <li>Envio das fotos e dos vídeos dos produtos.</li>
-        <li>Entrega do guia de marca e publicação do perfil atualizado.</li>
-        <li>Publicação do site com o endereço escolhido.</li>
-        <li>Início do calendário de conteúdo.</li>
-      </ol>
-    </div>
+  <h2 class="t">Pagamento e condições</h2>
+  <div class="card" style="margin-top:22px">
+    <h3>Formas de pagamento</h3>
+    <p style="margin:6px 0 0;font-size:17px">À vista no Pix, ou no cartão de crédito em até 12 vezes, pelo link de pagamento do Mercado Pago. O número de parcelas e os eventuais juros aparecem na tela de pagamento, antes de você confirmar. Os planos mensais são pagos todo mês, por Pix ou cartão.</p>
   </div>
-  <div class="card" style="margin-top:22px;background:var(--sand2)">
-    <h3>Referências da pesquisa de preços</h3>
-    <p class="src" style="margin:6px 0 0">Gestão de redes: profissionais iniciantes cobram de R$&nbsp;800 a R$&nbsp;1.500 por cliente ao mês; a gestão básica de 1 rede com 12 publicações fica entre R$&nbsp;1.200 e R$&nbsp;2.500 (Jamile Fernandez; FreelaSemCrise). Sites: simples ou de página única, de R$&nbsp;500 a R$&nbsp;3.000; institucionais simples, de R$&nbsp;1.500 a R$&nbsp;5.000; lojas virtuais, a partir de cerca de R$&nbsp;6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Identidade visual: logo de R$&nbsp;300 a R$&nbsp;5.000; manual de marca de R$&nbsp;2.500 a R$&nbsp;8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: de R$&nbsp;800 a R$&nbsp;1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais, e os valores desta proposta podem ser ajustados.</p>
+  <div class="card note" style="margin-top:18px">
+    <h3>Condições gerais</h3>
+    <ol>
+      <li>O valor de lançamento vale pelos 3 primeiros meses de cada plano. Depois, passa a valer o valor regular, informado com 30 dias de antecedência.</li>
+      <li>Não há fidelidade: você pode cancelar um plano com 30 dias de aviso.</li>
+      <li>Você pode começar só pelo conteúdo, sem contratar o site nem o guia de marca. Os outros serviços entram quando fizer sentido para você.</li>
+      <li>Toda arte e toda legenda serão enviadas para a sua aprovação antes de serem publicadas.</li>
+      <li>A logo existente define a paleta de cores. Nenhuma alteração será feita sem a sua aprovação.</li>
+      <li>Sobre saúde: sugerimos apresentar as garrafadas como tradição e apoio ao bem-estar, sem prometer cura ou tratamento, e manter o aviso de que o conteúdo não substitui a orientação médica. Isso protege o seu perfil de denúncias e bloqueios.</li>
+      <li>O impulsionamento pago e os custos de terceiros, como o domínio, são cobrados à parte.</li>
+      <li>Os horários de publicação serão testados nas primeiras semanas, para descobrirmos quando há mais engajamento.</li>
+    </ol>
   </div>
-  <div style="margin-top:18px"><div class="fr" style="font-size:22px;line-height:1.3;color:var(--olive)">Será um prazer cuidar da presença digital do Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Liine Dias Freitas</div></div>
   <div class="foot"><span>Liine Dias Freitas</span><span>Página 9</span></div>
+</section>
+
+<!-- 10. ETAPAS E REFERÊNCIAS -->
+<section class="page">
+  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
+  <h2 class="t">Próximas etapas</h2>
+  <div class="steps">
+    <div><b>1</b>Conversa para alinhar escopo e prioridades</div>
+    <div><b>2</b>Escolha do plano ou do pacote</div>
+    <div><b>3</b>Envio das fotos e dos vídeos dos produtos</div>
+    <div><b>4</b>Entrega do perfil atualizado</div>
+    <div><b>5</b>Publicação do site com o endereço escolhido</div>
+    <div><b>6</b>Início do calendário de conteúdo</div>
+  </div>
+  <div class="card" style="margin-top:26px;background:var(--sand2)">
+    <h3>Referências da pesquisa de preços</h3>
+    <p class="src" style="margin:6px 0 0">Gestão de redes: profissionais iniciantes cobram de R$&nbsp;800 a R$&nbsp;1.500 por cliente ao mês; a gestão básica de 1 rede com 12 publicações fica entre R$&nbsp;1.200 e R$&nbsp;2.500 (Jamile Fernandez; FreelaSemCrise). Sites: simples ou de página única, de R$&nbsp;500 a R$&nbsp;3.000; institucionais simples, de R$&nbsp;1.500 a R$&nbsp;5.000; lojas virtuais, a partir de cerca de R$&nbsp;6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Identidade visual: logo de R$&nbsp;300 a R$&nbsp;5.000; manual de marca de R$&nbsp;2.500 a R$&nbsp;8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: de R$&nbsp;800 a R$&nbsp;1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais. Os valores regulares desta proposta ficam na base dessas faixas ou abaixo delas, e o valor de lançamento é uma condição especial para os primeiros projetos.</p>
+  </div>
+  <div style="margin-top:34px"><div class="fr" style="font-size:24px;line-height:1.3;color:var(--olive)">Será um prazer cuidar da presença digital do Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Liine Dias Freitas</div></div>
+  <div class="foot"><span>Liine Dias Freitas</span><span>Página 10</span></div>
 </section>
 
 </body>
