@@ -46,14 +46,14 @@ b,strong{font-weight:700}
 .week div{background:var(--sand);border-radius:12px;padding:12px 4px;text-align:center;font-size:15px;line-height:1.25}
 .week b{display:block;font:700 13px Inter;letter-spacing:.06em;color:var(--terra-d);margin-bottom:4px}
 .week i{display:block;font-style:normal;color:var(--soft);font-size:13.5px;margin-top:3px}
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-.plan{background:var(--sand);border-radius:20px;padding:22px 22px 16px;display:flex;flex-direction:column;position:relative}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.plan{background:var(--sand);border-radius:20px;padding:26px 22px 20px;display:flex;flex-direction:column;position:relative}
 .plan.hl{background:var(--olive);color:#fff}
 .plan.hl h3,.plan.hl .pr{color:#fff}
 .plan h3{font-size:25px;margin-bottom:4px}
 .plan .for{font-size:15px;color:var(--soft);margin-bottom:12px}
 .plan.hl .for{color:#e9dcb8}
-.plan ul{list-style:none;margin:0 0 10px;padding:0;display:flex;flex-direction:column;gap:4px;font-size:15px;line-height:1.28}
+.plan ul{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.32}
 .plan li{padding-left:24px;position:relative}
 .plan li:before{content:"";position:absolute;left:3px;top:.3em;width:5px;height:10px;border:solid var(--olive);border-width:0 2.2px 2.2px 0;transform:rotate(45deg)}
 .plan.hl li:before{border-color:#e7c875}
@@ -74,7 +74,7 @@ td:last-child small{font:600 13px Inter;text-align:right}
 .pr .now,.seed .now{display:block;font:700 34px Cinzel,serif;color:var(--olive);line-height:1.4}
 .plan.hl .pr .old{color:#e9dcb8}
 .plan.hl .pr .now{color:#fff}
-.seed{display:flex;gap:22px;align-items:center;justify-content:space-between;background:var(--sand2);border-radius:16px;padding:12px 24px;margin-top:12px}
+.seed{display:flex;gap:22px;align-items:center;justify-content:space-between;background:var(--sand2);border-radius:16px;padding:14px 24px;margin-top:12px}
 .seed h3{font-size:20px;margin-bottom:4px}
 .seed p{margin:0;font-size:15.5px;line-height:1.4}
 .seed .sp{flex:none;width:206px;border-left:2px solid var(--line);padding-left:20px}
@@ -129,33 +129,6 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
 .alert.lg{padding:18px 24px}
 .alert.lg b{font-size:19px;margin-bottom:6px}
 .alert.lg p{font-size:16.5px}
-
-.flow{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr;align-items:stretch;margin-top:22px}
-.fstep{position:relative;background:var(--sand);border-radius:16px;padding:14px 14px 14px;text-align:center}
-.fstep svg{width:34px;height:34px;stroke:var(--terra-d);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.fstep b{display:block;font:700 16px Cinzel,serif;color:var(--olive);margin:6px 0 4px;line-height:1.4;word-spacing:.1em}
-.fstep .t{display:block;font-size:14.5px;line-height:1.4}
-.sn{position:absolute;top:10px;left:12px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--terra-d);color:#fff;font:700 13px/1 Inter}
-.farrow{display:grid;place-items:center}
-.farrow svg{width:24px;height:24px;stroke:var(--terra);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.dm{display:grid;grid-template-columns:auto 34px 1fr;align-items:center;margin-top:16px;background:#fff9ec;border:1.5px solid var(--line);border-radius:16px;padding:12px 18px}
-.dm small{display:block;font:600 12.5px Inter;color:var(--soft);margin-bottom:5px;word-spacing:.1em}
-.dm .bub{border-radius:14px;padding:8px 14px;font-size:14.5px;line-height:1.4}
-.dm .in{background:var(--sand2);color:var(--ink);font-weight:700;text-align:center}
-.dm .out{background:var(--olive);color:#fff}
-.dm .arr{display:grid;place-items:center}
-.dm .arr svg{width:22px;height:22px;stroke:var(--terra);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.tile{background:var(--sand);border-radius:16px;padding:12px 14px;text-align:center}
-.tile.hl{background:var(--olive);color:#fff}
-.tile b{display:block;font:700 14.5px Cinzel,serif;color:var(--ink);line-height:1.4;word-spacing:.1em;min-height:41px}
-.tile.hl b{color:#fff}
-.tile .old{display:block;font:600 13px Inter;color:var(--soft);text-decoration:line-through;text-decoration-thickness:1.5px;margin:4px 0 2px}
-.tile .now{display:block;font:700 28px/1.25 Cinzel,serif;color:var(--olive)}
-.tile.hl .now{color:#fff;font-size:24px;margin-top:6px}
-.tile small{display:block;font:600 12.5px/1.4 Inter;color:var(--soft);margin-top:2px}
-.tile.hl small{color:#e9dcb8}
 </style>
 </head>
 <body>
@@ -165,10 +138,6 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
 <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 12h18a9 8 0 0 1-18 0z"/><path d="M8 8c0-1.5 1-1.5 1-3M12 8c0-1.5 1-1.5 1-3M16 8c0-1.5 1-1.5 1-3"/></symbol>
 <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol>
 <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></symbol>
-<symbol id="i-post" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="3"/><path d="M3.5 15l4.5-4.5 4 4 3-3 5.5 5"/><circle cx="9" cy="9" r="1.3"/></symbol>
-<symbol id="i-comment" viewBox="0 0 24 24"><path d="M4 5.5h16v11H10l-4.5 3.5v-3.5H4z"/><path d="M8 10h8M8 13h5"/></symbol>
-<symbol id="i-send" viewBox="0 0 24 24"><path d="M3 11.5L21 3l-7.5 18-3-7.5z"/><path d="M10.5 13.5L21 3"/></symbol>
-<symbol id="i-next" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </defs></svg>
 
 <!-- 1. CAPA -->
@@ -285,7 +254,6 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li><b>Carrossel educativo</b>, sobre ervas e banhos</li>
         <li><b>Story com enquete</b>, para conversar com o público</li>
         <li><b>Reel curto</b>, com o processo e o ritual</li>
-        <li><b>Chamada para comentar</b>, com resposta automática no direct</li>
       </ul>
     </div>
     <div class="card">
@@ -336,53 +304,6 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
 </section>
 
 
-<!-- 5b. AUTOMAÇÃO -->
-<section class="page">
-  <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
-  <h2 class="t">Automação de direct</h2>
-  <p class="lead">Quem comenta a palavra que você escolher recebe, na hora, a informação ou o link no direct. Ninguém fica sem resposta, e você ganha tempo.</p>
-  <div class="flow">
-    <div class="fstep"><svg><use href="#i-post"/></svg><b><i class="sn">1</i>Você publica</b><span class="t">Na arte ou na legenda: “Comente BANHO e receba os valores”.</span></div>
-    <div class="farrow"><svg><use href="#i-next"/></svg></div>
-    <div class="fstep"><svg><use href="#i-comment"/></svg><b><i class="sn">2</i>Alguém comenta</b><span class="t">A pessoa escreve a palavra no comentário do post ou do reel.</span></div>
-    <div class="farrow"><svg><use href="#i-next"/></svg></div>
-    <div class="fstep"><svg><use href="#i-send"/></svg><b><i class="sn">3</i>Chega no direct</b><span class="t">A mensagem leva o link, o preço ou o que você decidir.</span></div>
-  </div>
-  <div class="dm">
-    <div><small>Comentário no post</small><div class="bub in">BANHO</div></div>
-    <div class="arr"><svg><use href="#i-next"/></svg></div>
-    <div><small>Mensagem automática no direct</small><div class="bub out">Olá! Os Banhos Planetários estão neste link, com os valores e como pedir: [link do catálogo]</div></div>
-  </div>
-  <div class="two" style="margin-top:16px;align-items:start">
-    <div class="card" style="padding:16px 20px">
-      <h3 style="font-size:18px">O que está incluso</h3>
-      <ul class="list" style="font-size:15px;gap:5px">
-        <li>Conversa e texto da mensagem, no tom da marca</li>
-        <li>Configuração e teste da automação</li>
-        <li>Orientação para usar a palavra nas publicações</li>
-        <li>Ajustes simples no primeiro mês</li>
-      </ul>
-    </div>
-    <div class="card" style="padding:16px 20px">
-      <h3 style="font-size:18px">O que você precisa</h3>
-      <ul class="list" style="font-size:15px;gap:5px">
-        <li>Conta profissional do Instagram</li>
-        <li>Conexão pelo login oficial, sem passar a senha</li>
-        <li>Link ou informação a enviar: catálogo, site ou WhatsApp</li>
-      </ul>
-    </div>
-  </div>
-  <h3 style="font-size:19px;margin:20px 0 8px">Investimento</h3>
-  <div class="tiles">
-    <div class="tile"><b>Configuração de<br>1 palavra-chave</b><span class="old">De R$&nbsp;450</span><span class="now">R$&nbsp;300</span><small>pagamento único</small></div>
-    <div class="tile"><b>Palavra-chave<br>adicional</b><span class="old">De R$&nbsp;150</span><span class="now">R$&nbsp;100</span><small>cada</small></div>
-    <div class="tile hl"><b>Nos planos mensais</b><span class="now">Incluída</span><small>Encanto: 1 palavra-chave<br>Portal: até 3 palavras-chave<br>Essencial e Semente: opcional</small></div>
-  </div>
-  <p style="margin:10px 0 0;font-size:15px"><b>Ferramenta de automação (como o ManyChat):</b> mensalidade do fornecedor, de R$&nbsp;100 a R$&nbsp;300 por mês, por conta da cliente.</p>
-  <p class="src" style="margin:8px 0 0">Regras do Instagram: uma mensagem automática por comentário, em até 7 dias; a conversa só continua se a pessoa responder, e quem não segue o perfil recebe na pasta de solicitações.</p>
-  <div class="foot"><span>Aline Dias</span><span>Página 6</span></div>
-</section>
-
 <!-- 5. SITE -->
 <section class="page">
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
@@ -422,7 +343,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
       </ul>
     </div>
   </div>
-  <div class="foot"><span>Aline Dias</span><span>Página 7</span></div>
+  <div class="foot"><span>Aline Dias</span><span>Página 6</span></div>
 </section>
 
 <!-- 6. PLANOS -->
@@ -430,7 +351,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
   <div class="top"><span>Proposta comercial</span><span>Portal da Deusa · Alquimias da Terra</span></div>
   <h2 class="t">Planos mensais de redes sociais</h2>
   <p class="lead">Condição especial de lançamento nos 3 primeiros meses. Depois, vale o valor regular, que você já conhece desde hoje.</p>
-  <div class="plans" style="margin-top:22px">
+  <div class="plans" style="margin-top:26px">
     <div class="plan">
       <h3>Essencial</h3><div class="for">Para começar com constância</div>
       <ul>
@@ -454,7 +375,6 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li>Calendário da semana dos planetas</li>
         <li>Otimização do perfil, sem custo</li>
         <li>Guia de marca, de bônus</li>
-        <li>Automação de direct, 1 palavra-chave</li>
       </ul>
       <div class="pr"><span class="old">De R$&nbsp;900 por mês</span><span class="now">R$&nbsp;600</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
@@ -468,7 +388,6 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li>2 reels editados por mês</li>
         <li>Otimização do perfil e capas dos destaques</li>
         <li>Guia de marca, de bônus</li>
-        <li>Automação de direct, até 3 palavras-chave</li>
         <li>Relatório mensal de métricas</li>
         <li>1 reunião mensal de alinhamento</li>
       </ul>
@@ -482,7 +401,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     </div>
     <div class="sp"><span class="old">De R$&nbsp;250 por mês</span><span class="now">R$&nbsp;79</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
   </div>
-  <div class="foot"><span>Aline Dias</span><span>Página 8</span></div>
+  <div class="foot"><span>Aline Dias</span><span>Página 7</span></div>
 </section>
 
 <!-- 7. SITE E MARCA -->
@@ -507,7 +426,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
       <tr><td>Capas dos destaques<small>Até 8 capas no padrão da marca.</small></td><td class="pc"><span class="old">R$&nbsp;90</span><span class="now">R$&nbsp;49</span></td></tr>
     </table>
   </div>
-  <div class="foot"><span>Aline Dias</span><span>Página 9</span></div>
+  <div class="foot"><span>Aline Dias</span><span>Página 8</span></div>
 </section>
 
 <!-- 8. VALORES COMPLEMENTARES -->
@@ -535,12 +454,12 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     <p style="margin:4px 0 10px;font-size:16.5px">Site Vitrine e 3 meses do plano Encanto, com bônus.</p>
     <table class="tight" style="color:#fff">
       <tr><td style="border-color:#ffffff44">Site Vitrine<small style="color:#e9dcb8">pagamento único</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;790</span></td></tr>
-      <tr><td style="border-color:#ffffff44">Plano Encanto, com bônus<small style="color:#e9dcb8">3 meses a R$&nbsp;600 por mês; bônus: guia de marca, perfil e automação</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;1.800</span></td></tr>
+      <tr><td style="border-color:#ffffff44">Plano Encanto, com bônus<small style="color:#e9dcb8">3 meses a R$&nbsp;600 por mês, com guia de marca e otimização do perfil</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;1.800</span></td></tr>
       <tr><td><b>Total do pacote</b><small style="color:#e9dcb8">No valor regular, o mesmo conjunto custaria R$&nbsp;4.500</small></td><td class="pc"><span class="now" style="color:#fff">R$&nbsp;2.590</span></td></tr>
     </table>
     <p style="margin:12px 0 0;font-size:16px;color:#e9dcb8">À vista no Pix ou em até 12x no cartão, pelo Mercado Pago.</p>
   </div>
-  <div class="foot"><span>Aline Dias</span><span>Página 10</span></div>
+  <div class="foot"><span>Aline Dias</span><span>Página 9</span></div>
 </section>
 
 <!-- 9. PAGAMENTO E CONDIÇÕES -->
@@ -560,12 +479,11 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
       <li>Toda arte e toda legenda serão enviadas para a sua aprovação antes de serem publicadas.</li>
       <li>A logo existente define a paleta de cores. Nenhuma alteração será feita sem a sua aprovação.</li>
       <li>Sobre saúde: sugerimos apresentar as garrafadas como tradição e apoio ao bem-estar, sem prometer cura ou tratamento, e manter o aviso de que o conteúdo não substitui a orientação médica. Isso protege o seu perfil de denúncias e bloqueios.</li>
-      <li>O impulsionamento pago e os custos de terceiros, como o domínio e a mensalidade da ferramenta de automação, são cobrados à parte.</li>
-      <li>A automação de direct segue as regras do Instagram, que podem mudar com o tempo.</li>
+      <li>O impulsionamento pago e os custos de terceiros, como o domínio, são cobrados à parte.</li>
       <li>Os horários de publicação serão testados nas primeiras semanas, para descobrirmos quando há mais engajamento.</li>
     </ol>
   </div>
-  <div class="foot"><span>Aline Dias</span><span>Página 11</span></div>
+  <div class="foot"><span>Aline Dias</span><span>Página 10</span></div>
 </section>
 
 <!-- 10. ETAPAS E REFERÊNCIAS -->
@@ -589,10 +507,10 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
   </div>
   <div class="card" style="margin-top:26px;background:var(--sand2)">
     <h3>Referências da pesquisa de preços</h3>
-    <p class="src" style="margin:6px 0 0">Gestão de redes: profissionais iniciantes cobram de R$&nbsp;800 a R$&nbsp;1.500 por cliente ao mês; a gestão básica de 1 rede com 12 publicações fica entre R$&nbsp;1.200 e R$&nbsp;2.500 (Jamile Fernandez; FreelaSemCrise). Sites: simples ou de página única, de R$&nbsp;500 a R$&nbsp;3.000; institucionais simples, de R$&nbsp;1.500 a R$&nbsp;5.000; lojas virtuais, a partir de cerca de R$&nbsp;6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Identidade visual: logo de R$&nbsp;300 a R$&nbsp;5.000; manual de marca de R$&nbsp;2.500 a R$&nbsp;8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: de R$&nbsp;800 a R$&nbsp;1.500 (FreelaSemCrise). Automação de direct: as ferramentas têm planos de cerca de R$&nbsp;100 a R$&nbsp;300 por mês (Chatify; WiiChat; WordChats) e a partir de cerca de US$&nbsp;17 no ManyChat; o Instagram permite uma resposta automática por comentário, em até 7 dias (documentação da Meta). São referências de blogs e sites do setor, não preços oficiais. Os valores regulares desta proposta ficam na base dessas faixas ou abaixo delas, e o valor de lançamento é uma condição especial para os primeiros projetos.</p>
+    <p class="src" style="margin:6px 0 0">Gestão de redes: profissionais iniciantes cobram de R$&nbsp;800 a R$&nbsp;1.500 por cliente ao mês; a gestão básica de 1 rede com 12 publicações fica entre R$&nbsp;1.200 e R$&nbsp;2.500 (Jamile Fernandez; FreelaSemCrise). Sites: simples ou de página única, de R$&nbsp;500 a R$&nbsp;3.000; institucionais simples, de R$&nbsp;1.500 a R$&nbsp;5.000; lojas virtuais, a partir de cerca de R$&nbsp;6.000 (InfinitePay; Hostinger; Escola Algoritmo X). Identidade visual: logo de R$&nbsp;300 a R$&nbsp;5.000; manual de marca de R$&nbsp;2.500 a R$&nbsp;8.000 (FreelaSemCrise; Monitor do Mercado). Pacote mensal de 8 artes: de R$&nbsp;800 a R$&nbsp;1.500 (FreelaSemCrise). São referências de blogs do setor, não preços oficiais. Os valores regulares desta proposta ficam na base dessas faixas ou abaixo delas, e o valor de lançamento é uma condição especial para os primeiros projetos.</p>
   </div>
   <div style="margin-top:34px"><div class="fr" style="font-size:24px;line-height:1.4;color:var(--olive)">Será um prazer cuidar da presença digital do Portal da Deusa.</div><div style="font-size:17px;color:var(--soft);margin-top:6px">Aline Dias</div></div>
-  <div class="foot"><span>Aline Dias</span><span>Página 12</span></div>
+  <div class="foot"><span>Aline Dias</span><span>Página 11</span></div>
 </section>
 
 </body>
