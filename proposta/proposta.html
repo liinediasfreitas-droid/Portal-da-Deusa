@@ -32,7 +32,7 @@ h2.t{font-size:34px;line-height:1.25;margin-top:10px}
 .list li{padding-left:22px;position:relative}
 .list li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--terra)}
 b,strong{font-weight:700}
-.shot{position:relative;width:330px;flex:none}
+.shot{position:relative;width:260px;flex:none}
 .shot img{width:100%;display:block;border-radius:14px;box-shadow:0 0 0 2px var(--line)}
 .n{position:absolute;right:-14px;width:30px;height:30px;border-radius:50%;background:var(--terra-d);color:#fff;font:700 15px Inter;display:grid;place-items:center;box-shadow:0 0 0 3px var(--bg)}
 .zone{position:absolute;left:0;right:0;border:2.5px solid var(--terra);border-radius:10px}
@@ -112,6 +112,16 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
 .play{position:absolute;inset:0;display:grid;place-items:center}
 .play i{width:38px;height:38px;border-radius:50%;background:#ffffffdd;display:grid;place-items:center;box-shadow:0 1px 6px #0004}
 .play i:after{content:"";border-left:12px solid var(--olive);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+
+.refl{display:block;background:#fff9ec;border:1.5px solid var(--terra);border-radius:14px;padding:12px 16px;font-size:15px;line-height:1.42}
+.refl-h{display:flex;gap:10px;align-items:center}
+.refl-h .n{position:static;box-shadow:none;flex:none}
+.refl-h b{font:700 15px Cinzel,serif;color:var(--olive);word-spacing:.1em;line-height:1.3}
+.refl .pill{display:inline-block;margin-top:9px;background:#fff;border:1.5px solid var(--terra);border-radius:999px;padding:3px 14px;font:700 16px Cinzel,serif;color:var(--olive);word-spacing:.1em}
+.refl p{margin:8px 0 0}
+.bottom{display:flex;gap:14px;align-items:stretch;margin-top:14px}
+.bottom .refl{flex:1.9;min-width:0}
+.bottom .card{flex:1;min-width:0;margin:0;padding:12px 16px;border-radius:14px;font-size:15px;line-height:1.42;display:flex;flex-direction:column;justify-content:center}
 </style>
 </head>
 <body>
@@ -154,14 +164,21 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
       <div class="zone" style="top:56%;height:43%"></div><span class="n" style="top:75%">5</span>
     </div>
     <div class="legend">
-      <div><span class="n">1</span><span><b>Nome do perfil.</b> É o nome em destaque no alto do perfil, e o Instagram o considera nas buscas. Quem procura “ervas” encontra com mais facilidade perfis que tenham essa palavra no nome. Sugestão: “Portal da Deusa | Ervas” (o limite é de 30 caracteres).</span></div>
+      <div><span class="n">1</span><span><b>Nome do perfil.</b> Incluir uma palavra que diga o que você oferece pode ajudar novas pessoas a encontrar o seu perfil. Veja a sugestão no quadro abaixo.</span></div>
       <div><span class="n">2</span><span><b>Biografia.</b> A biografia já transmite a essência do seu trabalho. Podemos acrescentar o que você oferece e como fazer um pedido, para facilitar o contato de quem deseja comprar.</span></div>
       <div><span class="n">3</span><span><b>Link.</b> Hoje o link leva ao Linktree. Com o site, ele poderá levar direto ao catálogo, em um só clique.</span></div>
       <div><span class="n">4</span><span><b>Destaques.</b> Eles reúnem conteúdos muito valiosos, como vivências, escalda-pés e vaporização. Podemos padronizar as capas com as cores da marca e organizar a ordem para quem está conhecendo o seu trabalho.</span></div>
       <div><span class="n">5</span><span><b>Visual do feed.</b> Os cartazes dos produtos são bonitos e informativos. Podemos criar harmonia entre cartazes, fotos e vídeos, com as cores da marca, para o perfil ficar ainda mais reconhecível.</span></div>
     </div>
   </div>
-  <div class="card" style="margin-top:12px;padding:12px 22px;border-radius:14px"><b style="color:var(--terra-d)">O que já encanta</b><br>Produtos reais, bastidores do processo (como as fotos “saindo da forma”) e uma história autêntica. É isso que torna o seu trabalho especial, e é isso que vamos valorizar.</div>
+  <div class="bottom">
+    <aside class="refl">
+      <div class="refl-h"><span class="n">1</span><b>Por que sugerimos “Ervas” no nome</b></div>
+      <span class="pill">Portal da Deusa | Ervas</span>
+      <p>O nome que aparece no alto do perfil é usado nas buscas do Instagram. Quem ainda não conhece o Portal da Deusa pode chegar até você procurando um banho, um aroma natural, uma garrafada ou um chá, e “Ervas” reúne tudo isso. Nomes como “Alquimias da Terra” são lindos, mas nem sempre dizem o que você oferece a quem procura comprar.</p>
+    </aside>
+    <div class="card"><b style="display:block;margin-bottom:5px;color:var(--terra-d)">O que já encanta</b><span>Produtos reais, bastidores do processo (como as fotos “saindo da forma”) e uma história autêntica. É isso que torna o seu trabalho especial, e é isso que vamos valorizar.</span></div>
+  </div>
   <div class="foot"><span>Aline Dias</span><span>Página 2</span></div>
 </section>
 
@@ -333,7 +350,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li>Planejamento mensal de conteúdo</li>
         <li>Revisão da biografia e do link, sem custo</li>
       </ul>
-      <div class="pr"><span class="old">De R$&nbsp;600 por mês</span><span class="now">R$&nbsp;179</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
+      <div class="pr"><span class="old">De R$&nbsp;600 por mês</span><span class="now">R$&nbsp;400</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
     <div class="plan hl">
       <span class="badge">MAIS ESCOLHIDO</span>
@@ -348,7 +365,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li>Otimização do perfil, sem custo</li>
         <li>Guia de marca, de bônus</li>
       </ul>
-      <div class="pr"><span class="old">De R$&nbsp;900 por mês</span><span class="now">R$&nbsp;279</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
+      <div class="pr"><span class="old">De R$&nbsp;900 por mês</span><span class="now">R$&nbsp;600</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
     <div class="plan">
       <h3>Portal</h3><div class="for">Para uma presença diária</div>
@@ -363,7 +380,7 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
         <li>Relatório mensal de métricas</li>
         <li>1 reunião mensal de alinhamento</li>
       </ul>
-      <div class="pr"><span class="old">De R$&nbsp;1.300 por mês</span><span class="now">R$&nbsp;379</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
+      <div class="pr"><span class="old">De R$&nbsp;1.300 por mês</span><span class="now">R$&nbsp;900</span><small>POR MÊS, NOS 3 PRIMEIROS MESES</small></div>
     </div>
   </div>
   <div class="seed">
@@ -426,8 +443,8 @@ td.pc small{display:block;font:600 13px Inter;color:var(--soft);margin-top:1px}
     <p style="margin:4px 0 10px;font-size:16.5px">Site Vitrine e 3 meses do plano Encanto, com bônus.</p>
     <table class="tight" style="color:#fff">
       <tr><td style="border-color:#ffffff44">Site Vitrine<small style="color:#e9dcb8">pagamento único</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;790</span></td></tr>
-      <tr><td style="border-color:#ffffff44">Plano Encanto, com bônus<small style="color:#e9dcb8">3 meses a R$&nbsp;279 por mês, com guia de marca e otimização do perfil</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;837</span></td></tr>
-      <tr><td><b>Total do pacote</b><small style="color:#e9dcb8">No valor regular, o mesmo conjunto custaria R$&nbsp;4.500</small></td><td class="pc"><span class="now" style="color:#fff">R$&nbsp;1.627</span></td></tr>
+      <tr><td style="border-color:#ffffff44">Plano Encanto, com bônus<small style="color:#e9dcb8">3 meses a R$&nbsp;600 por mês, com guia de marca e otimização do perfil</small></td><td class="pc" style="border-color:#ffffff44"><span class="now" style="color:#fff">R$&nbsp;1.800</span></td></tr>
+      <tr><td><b>Total do pacote</b><small style="color:#e9dcb8">No valor regular, o mesmo conjunto custaria R$&nbsp;4.500</small></td><td class="pc"><span class="now" style="color:#fff">R$&nbsp;2.590</span></td></tr>
     </table>
     <p style="margin:12px 0 0;font-size:16px;color:#e9dcb8">À vista no Pix ou em até 12x no cartão, pelo Mercado Pago.</p>
   </div>
