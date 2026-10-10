@@ -33,6 +33,8 @@ a{color:inherit}
 .card:hover{box-shadow:0 4px 14px #0003}
 .card__img{aspect-ratio:1;overflow:hidden;background:var(--paper3);display:grid;place-items:center}
 .card__img img{width:100%;height:100%;object-fit:cover}
+.card[data-id=agua-florida] .card__img{position:relative}
+.card[data-id=agua-florida] .card__img img{position:absolute;inset:0;object-position:50% 65%}
 .card__moon{font-size:3rem;color:var(--gold)}
 .card--breve{opacity:.65;cursor:default}
 .card__body{display:flex;flex-direction:column;gap:.2rem;padding:.8rem}
