@@ -15,7 +15,8 @@ window.PRECOS = {
   whatsapp: '5567992895088',
   email: 'primicia.eliane@outlook.com',
 
-  // Peças que a Eliane consegue costurar por semana em um modelo simples.
+  // Peças que o ateliê entrega por semana em um modelo simples, contando a
+  // equipe de costureiras. Usado para calcular o prazo. (Sugestão: confirmar.)
   capacidadeSemanal: 60,
 
   // Desconto na mão de obra conforme o tamanho do lote (total de peças).

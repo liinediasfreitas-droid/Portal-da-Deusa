@@ -8,7 +8,7 @@ Valores em R$ por peça, no formato mínimo a máximo.
 
 | Item | Sugestão | Valor da Eliane |
 |---|---|---|
-| Peças por semana (modelo simples) | 60 | |
+| Peças por semana com a equipe (modelo simples) | 60 | |
 | Pedido mínimo (confecção) | 20 por modelo | |
 | Pedido mínimo (costura criativa) | 1 | |
 | Abaixo do mínimo, a costura sobe | +30% | |
@@ -58,7 +58,8 @@ O valor do tecido é multiplicado pelo tipo de tecido escolhido. Por exemplo, li
 
 ## Perguntas que a Eliane precisa responder
 
-1. Ela tem galoneira, overloque e reta industrial? Sem essas máquinas, fitness, lingerie e moda praia saem do site.
-2. Quantas peças ela realmente costura por semana, sozinha?
-3. Ela quer mesmo comprar o tecido? Isso significa colocar dinheiro na frente e assumir o risco de errar a compra.
-4. O e-mail certo é `primicia.eliane@outlook.com`, sem acento?
+1. Quais máquinas ela tem? (Para listar no site: reta industrial, overloque, galoneira, interloque, bordadeira...)
+2. Quantas peças o ateliê entrega por semana **com a equipe**? E quantas costureiras de fato estão disponíveis hoje?
+3. Como é paga a equipe: por peça ou por diária? Esse custo precisa estar dentro do preço da costura.
+4. Ela quer mesmo comprar o tecido? Isso significa colocar dinheiro na frente e assumir o risco de errar a compra.
+5. O e-mail certo é `primicia.eliane@outlook.com`, sem acento?

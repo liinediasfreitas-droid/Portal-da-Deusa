@@ -244,7 +244,7 @@
     if (r.graduacao[1] > 0) det.push(['Graduação de tamanhos', faixa(r.graduacao)]);
     if (r.desconto) det.push(['Desconto de lote', `${Math.round(r.desconto * 100)}% na costura`]);
     if (r.abaixo) det.push(['Pequena tiragem', `abaixo do mínimo de ${r.s.pedidoMinimo} peças: costura +${Math.round(P.acrescimoAbaixoMinimo * 100)}%`]);
-    if (r.loteGrande) det.push(['Lote grande', 'a Eliane confirma se consegue atender esse volume no prazo']);
+    if (r.loteGrande) det.push(['Lote grande', 'produzido com a equipe de costureiras; o prazo final é combinado na conversa']);
     $('#r-det').innerHTML = det.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
 
     const podeCompartilhar = foto && navigator.canShare && navigator.canShare({ files: [foto] });
