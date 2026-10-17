@@ -250,7 +250,7 @@
     const podeCompartilhar = foto && navigator.canShare && navigator.canShare({ files: [foto] });
     $('#enviar').textContent = podeCompartilhar ? 'Enviar com a foto' : 'Enviar pelo WhatsApp';
     $('#enviar-wa').hidden = !podeCompartilhar;
-    $('#enviar-wa').href = waLink(mensagem(r, false));
+    $('#enviar').href = $('#enviar-wa').href = waLink(mensagem(r, false));
     $('#enviar-dica').hidden = true;
 
     form.hidden = true;
@@ -274,20 +274,23 @@
     }
   }
 
-  $('#enviar').addEventListener('click', async () => {
+  // "Enviar" é um link de verdade para o WhatsApp (abrir por script é bloqueado em vários navegadores).
+  // Só quando dá para compartilhar a foto é que o clique vira o menu de compartilhar do celular.
+  $('#enviar').addEventListener('click', async (e) => {
     const r = ultimo;
-    if (foto && navigator.canShare && navigator.canShare({ files: [foto] })) {
-      const texto = mensagem(r, true);
-      // Alguns aplicativos descartam o texto quando vai junto com a foto: deixa copiado por garantia.
-      const copiado = await copiar(texto);
-      dica(`Escolha o WhatsApp e a conversa com a Primícia, (67) 99289-5088.${copiado ? ' Se o texto não aparecer, é só colar: ele já está copiado.' : ''}`);
-      try { await navigator.share({ files: [foto], text: texto }); } catch (e) {
-        if (e.name !== 'AbortError') window.open(waLink(mensagem(r, false)), '_blank', 'noopener');
-      }
+    if (!(foto && navigator.canShare && navigator.canShare({ files: [foto] }))) {
+      dica(foto ? 'Abrimos a conversa com o resumo. Agora é só anexar a sua foto de referência por lá.' : 'Abrimos a conversa com o resumo no WhatsApp.');
       return;
     }
-    window.open(waLink(mensagem(r, false)), '_blank', 'noopener');
-    dica(foto ? 'Abrimos a conversa com o resumo. Agora é só anexar a sua foto de referência por lá.' : 'Abrimos a conversa com o resumo no WhatsApp.');
+    e.preventDefault();
+    const texto = mensagem(r, true);
+    // Alguns aplicativos descartam o texto quando vai junto com a foto: deixa copiado por garantia.
+    // Sem await antes do share, para não perder o toque que autoriza o compartilhamento.
+    copiar(texto);
+    dica('Escolha o WhatsApp e a conversa com a Primícia, (67) 99289-5088. Se o texto não aparecer, é só colar: ele já está copiado.');
+    try { await navigator.share({ files: [foto], text: texto }); } catch (err) {
+      if (err.name !== 'AbortError') dica('Não deu para compartilhar a foto daqui. Toque em "Abrir no WhatsApp" e anexe a foto na conversa.');
+    }
   });
 
   $('#copiar').addEventListener('click', async () => {

@@ -1,6 +1,6 @@
 :root{--bg:#fbf7ef;--bg2:#f3ecdf;--card:#fffdf8;--ink:#1d1a16;--muted:#6b6257;--line:#e4d9c5;--gold:#b88a2e;--gold2:#d8b25a;--red:#a8121e;--btn:#141210;--btnink:#fbf7ef;--bar:#141210;--barink:#f3ecdf;--focus:#a8121e;--wa:#1f8f4e;--shadow:0 10px 30px rgba(40,28,10,.08)}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121110;--bg2:#1a1816;--card:#201d1a;--ink:#f1e9da;--muted:#b3a894;--line:#36302a;--gold:#d8b25a;--gold2:#e9c975;--red:#e0545e;--btn:#d8b25a;--btnink:#141210;--bar:#0b0a09;--barink:#f1e9da;--focus:#e9c975;--wa:#2fae63;--shadow:0 10px 30px rgba(0,0,0,.35)}}
-:root[data-theme=dark]{--bg:#121110;--bg2:#1a1816;--card:#201d1a;--ink:#f1e9da;--muted:#b3a894;--line:#36302a;--gold:#d8b25a;--gold2:#e9c975;--red:#e0545e;--btn:#d8b25a;--btnink:#141210;--bar:#0b0a09;--barink:#f1e9da;--focus:#e9c975;--wa:#2fae63;--shadow:0 10px 30px rgba(0,0,0,.35)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121110;--bg2:#1a1816;--card:#201d1a;--ink:#f1e9da;--muted:#b3a894;--line:#36302a;--gold:#d8b25a;--gold2:#e9c975;--red:#e0545e;--btn:#d8b25a;--btnink:#141210;--bar:#0b0a09;--barink:#f1e9da;--focus:#e9c975;--wa:#2fae63;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme=dark]{color-scheme:dark;--bg:#121110;--bg2:#1a1816;--card:#201d1a;--ink:#f1e9da;--muted:#b3a894;--line:#36302a;--gold:#d8b25a;--gold2:#e9c975;--red:#e0545e;--btn:#d8b25a;--btnink:#141210;--bar:#0b0a09;--barink:#f1e9da;--focus:#e9c975;--wa:#2fae63;--shadow:0 10px 30px rgba(0,0,0,.35)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
@@ -14,7 +14,7 @@ a{color:inherit}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 small{color:var(--muted);font-weight:400}
 
-.top{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.55rem 16px;background:var(--bar);color:var(--barink)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.55rem 16px;background:var(--bar);color:var(--barink)}
 .top__brand{display:flex;white-space:nowrap;align-items:center;gap:.55rem;text-decoration:none;font-size:1.25rem;font-style:italic;font-weight:700}
 .top__brand img{border-radius:50%}
 .top__brand small{font-family:Inter,sans-serif;font-style:normal;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2)}
