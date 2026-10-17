@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Primícia Costuraria · Sua marca sai do papel</title>
+<meta name="description" content="Confecção para pequenas marcas e costura criativa em Campo Grande. Modelagem, peça-piloto e produção em lote. Simule seu orçamento e fale com a Eliane pelo WhatsApp.">
+<meta name="theme-color" content="#141210">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/icone.png">
+<meta property="og:title" content="Primícia Costuraria · Sua marca sai do papel">
+<meta property="og:description" content="Você tem a ideia. Nós fazemos a sua marca acontecer. Simule seu orçamento em 2 minutos.">
+<meta property="og:image" content="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('tema-primicia');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <a href="#inicio" class="top__brand" aria-label="Primícia Costuraria, início">
+    <img src="assets/img/favicon.png" alt="" width="34" height="34">
+    <span>Primícia <small>costuraria</small></span>
+  </a>
+  <nav>
+    <a href="#como">Como funciona</a>
+    <a href="#orcamento" class="top__cta">Orçamento</a>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Confecção para pequenas marcas · Campo Grande</p>
+      <h1>Você tem a ideia.<br><em>Nós fazemos a sua marca acontecer.</em></h1>
+      <p class="hero__lead">Da foto ou do desenho até o lote pronto: modelagem, peça-piloto, compra do tecido e produção, com o cuidado de quem costura há 48 anos.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#orcamento">Simular meu orçamento</a>
+        <a class="btn btn--ghost" data-wa href="https://wa.me/5567992895088" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+      <ul class="hero__facts">
+        <li><strong>48 anos</strong> de costura</li>
+        <li><strong>A partir de 1 peça</strong> na costura criativa</li>
+        <li><strong>Lotes pequenos</strong> para marcas começando</li>
+      </ul>
+    </div>
+    <picture class="hero__logo">
+      <source srcset="assets/img/logo.webp" type="image/webp">
+      <img src="assets/img/logo.jpg" alt="Logo da Primícia Costuraria: costureira na máquina de costura com tecido vermelho" width="720" height="720">
+    </picture>
+  </section>
+
+  <section class="sec" id="para-quem">
+    <h2>Para quem tem uma marca na cabeça</h2>
+    <p class="sec__lead">Escolha o seu segmento e vá direto para o orçamento.</p>
+    <div class="segs" id="segs"></div>
+  </section>
+
+  <section class="sec sec--alt" id="como">
+    <h2>Como funciona</h2>
+    <ol class="passos">
+      <li><span>1</span><h3>Você conta a ideia</h3><p>Manda uma foto, um desenho ou uma peça de referência e diz quantas peças quer.</p></li>
+      <li><span>2</span><h3>Modelagem e peça-piloto</h3><p>A Eliane cria o molde e costura a primeira peça para você ver, vestir e ajustar.</p></li>
+      <li><span>3</span><h3>Você aprova</h3><p>Com a piloto aprovada, fechamos tecido, tamanhos, valor e prazo.</p></li>
+      <li><span>4</span><h3>Produção do lote</h3><p>As peças são produzidas uma a uma, com acabamento conferido antes da entrega.</p></li>
+    </ol>
+  </section>
+
+  <section class="sec" id="orcamento">
+    <h2>Simule seu orçamento</h2>
+    <p class="sec__lead">Leva uns 2 minutos. No fim, você manda tudo pronto para o WhatsApp da Eliane.</p>
+
+    <form class="wiz" id="wiz" novalidate>
+      <div class="wiz__progress" aria-hidden="true"><span id="wiz-bar"></span></div>
+      <p class="wiz__step-label" id="wiz-label" aria-live="polite"></p>
+
+      <fieldset class="step" data-step="1">
+        <legend>O que você quer produzir?</legend>
+        <div class="opts opts--seg" id="opt-seg"></div>
+        <div id="pecas-box" hidden>
+          <p class="q">Qual peça?</p>
+          <div class="opts opts--chip" id="opt-peca"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="step" data-step="2" hidden>
+        <legend>E o tecido?</legend>
+        <div class="opts opts--chip">
+          <label class="chip"><input type="radio" name="compra" value="primicia" checked><span>A Primícia compra o tecido e os aviamentos</span></label>
+          <label class="chip"><input type="radio" name="compra" value="cliente"><span>Eu forneço o tecido</span></label>
+        </div>
+        <div id="tecidos-box">
+          <p class="q">Qual tecido? <small>(pode mudar depois)</small></p>
+          <div class="opts opts--chip" id="opt-tecido"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="step" data-step="3" hidden>
+        <legend>Quantas peças?</legend>
+        <div class="grid2">
+          <label class="field"><span>Quantos modelos diferentes?</span><input type="number" name="modelos" min="1" max="20" value="1" inputmode="numeric"></label>
+          <label class="field"><span>Peças por modelo</span><input type="number" name="qtd" min="1" max="5000" value="30" inputmode="numeric"></label>
+          <label class="field" id="tamanhos-field"><span>Quantos tamanhos? <small>(ex.: P, M e G = 3)</small></span><input type="number" name="tamanhos" min="1" max="10" value="3" inputmode="numeric"></label>
+        </div>
+        <p class="aviso" id="aviso-minimo" hidden></p>
+        <p class="q">Nível de detalhe</p>
+        <div class="opts opts--chip" id="opt-detalhe"></div>
+        <label class="check"><input type="checkbox" name="temMolde"><span>Já tenho molde ou peça-piloto aprovada</span></label>
+      </fieldset>
+
+      <fieldset class="step" data-step="4" hidden>
+        <legend>Mostre a sua ideia</legend>
+        <label class="upload" id="upload">
+          <input type="file" name="foto" accept="image/*" id="foto">
+          <span class="upload__empty">
+            <strong>Adicionar foto ou desenho</strong>
+            <small>Uma peça que você gosta, um rascunho no papel, um print. A imagem fica só no seu aparelho até você enviar.</small>
+          </span>
+          <img id="foto-preview" alt="Pré-visualização da referência" hidden>
+        </label>
+        <button type="button" class="link" id="foto-remover" hidden>Remover foto</button>
+        <label class="field"><span>Conte mais <small>(cores, estampa, prazo, para quando você precisa)</small></span><textarea name="obs" rows="3" maxlength="600"></textarea></label>
+      </fieldset>
+
+      <fieldset class="step" data-step="5" hidden>
+        <legend>Quase lá: quem é você?</legend>
+        <div class="grid2">
+          <label class="field"><span>Seu nome *</span><input type="text" name="nome" autocomplete="name" required maxlength="80"></label>
+          <label class="field"><span>Nome da marca <small>(se já tiver)</small></span><input type="text" name="marca" maxlength="80"></label>
+          <label class="field"><span>Cidade</span><input type="text" name="cidade" autocomplete="address-level2" maxlength="80"></label>
+        </div>
+      </fieldset>
+
+      <p class="erro" id="wiz-erro" role="alert" hidden></p>
+
+      <div class="wiz__nav">
+        <button type="button" class="btn btn--ghost" id="wiz-voltar" hidden>Voltar</button>
+        <button type="submit" class="btn" id="wiz-seguir">Continuar</button>
+      </div>
+    </form>
+
+    <div class="result" id="result" hidden tabindex="-1">
+      <p class="eyebrow">Estimativa para</p>
+      <h3 id="r-titulo"></h3>
+      <div class="result__nums">
+        <div><span>Por peça</span><strong id="r-peca"></strong></div>
+        <div><span>Total estimado</span><strong id="r-total"></strong></div>
+        <div><span>Prazo</span><strong id="r-prazo"></strong></div>
+      </div>
+      <dl class="result__det" id="r-det"></dl>
+      <p class="aviso">Isto é uma estimativa. O valor final é fechado depois que a Eliane vê a sua referência e a peça-piloto é aprovada.</p>
+      <div class="result__actions">
+        <button type="button" class="btn btn--wa" id="enviar">Enviar para a Primícia</button>
+        <a class="btn btn--ghost" id="enviar-wa" target="_blank" rel="noopener">Abrir no WhatsApp</a>
+        <button type="button" class="link" id="copiar">Copiar resumo</button>
+        <button type="button" class="link" id="refazer">Refazer simulação</button>
+      </div>
+      <p class="dica" id="enviar-dica" hidden></p>
+    </div>
+  </section>
+
+  <section class="sec sec--alt sobre" id="sobre">
+    <p class="sobre__selo"><span><strong>48</strong>anos de costura</span></p>
+    <div>
+      <h2>Quem costura a sua marca</h2>
+      <p>A Primícia é o ateliê da Eliane, que costura há 48 anos em Campo Grande. Ela trabalha com marcas que estão começando: gente com uma ideia boa e sem confecção para produzir.</p>
+      <p>Aqui você fala direto com quem corta e costura. Sem intermediário, sem lote gigante obrigatório, com a peça-piloto na sua mão antes de produzir.</p>
+    </div>
+  </section>
+
+  <section class="sec sec--narrow" id="duvidas">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Qual é o pedido mínimo?</summary><p id="faq-minimo">Na confecção para marcas, a partir de 20 peças por modelo. Na costura criativa (nécessaires, ecobags, naninhas, kits), a partir de 1 peça.</p></details>
+    <details><summary>Quem compra o tecido?</summary><p>Você escolhe. A Primícia pode comprar tecido e aviamentos, ou você entrega o seu tecido e paga só a costura.</p></details>
+    <details><summary>Preciso ter o molde?</summary><p>Não. A modelagem e a peça-piloto fazem parte do serviço. Se você já tem molde ou piloto aprovada, essa etapa sai do orçamento.</p></details>
+    <details><summary>Quanto tempo demora?</summary><p>A peça-piloto fica pronta em cerca de 1 a 2 semanas. O prazo do lote depende da quantidade e do detalhe; o simulador mostra uma estimativa.</p></details>
+    <details><summary>Atende outras cidades?</summary><p>Sim. O ateliê fica em Campo Grande (MS), e as peças podem ser enviadas para qualquer lugar do Brasil, com frete à parte.</p></details>
+    <details><summary>Vocês fazem etiqueta e embalagem?</summary><p>Hoje não. Você pode mandar as suas etiquetas para serem costuradas nas peças.</p></details>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot__brand">Primícia <small>costuraria</small></p>
+  <p><a data-wa href="https://wa.me/5567992895088" target="_blank" rel="noopener">WhatsApp (67) 99289-5088</a> · <a href="mailto:primicia.eliane@outlook.com">primicia.eliane@outlook.com</a></p>
+  <p>Campo Grande · MS · Brasil</p>
+</footer>
+
+<a class="wa-float" data-wa href="https://wa.me/5567992895088" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script src="assets/js/precos.js"></script>
+<script src="assets/js/orcamento.js"></script>
+</body>
+</html>
