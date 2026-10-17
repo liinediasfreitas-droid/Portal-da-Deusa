@@ -146,12 +146,18 @@
   });
   $('#wiz-voltar').addEventListener('click', () => irPara(etapa - 1));
 
-  $$('#segs .seg').forEach((b) => b.addEventListener('click', () => {
-    const r = $(`#opt-seg input[value="${b.dataset.seg}"]`);
+  // Abre o simulador já com o segmento (e, se vier, a peça) marcado
+  function escolher(seg, peca) {
+    const r = $(`#opt-seg input[value="${seg}"]`);
+    if (!r) return;
     r.checked = true; montarSegmento();
+    const p = peca && $(`#opt-peca input[value="${peca}"]`);
+    if (p) p.checked = true;
     $('#result').hidden = true; form.hidden = false; irPara(1);
     $('#orcamento').scrollIntoView({ block: 'start' });
-  }));
+  }
+  window.PrimiciaSimulador = { escolher };
+  $$('#segs .seg').forEach((b) => b.addEventListener('click', () => escolher(b.dataset.seg)));
 
   // Cálculo da estimativa
   function calcular() {

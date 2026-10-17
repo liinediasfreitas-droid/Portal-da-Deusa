@@ -24,6 +24,7 @@
     <span>Primícia <small>costuraria</small></span>
   </a>
   <nav>
+    <a href="#trabalhos" id="nav-trabalhos" hidden>Trabalhos</a>
     <a href="#como">Como funciona</a>
     <a href="#orcamento" class="top__cta">Orçamento</a>
   </nav>
@@ -65,6 +66,18 @@
       <li><span>3</span><h3>Você aprova</h3><p>Com a piloto aprovada, fechamos tecido, tamanhos, valor e prazo.</p></li>
       <li><span>4</span><h3>Produção do lote</h3><p>As peças são produzidas uma a uma, com acabamento conferido antes da entrega.</p></li>
     </ol>
+  </section>
+
+  <section class="sec trabalhos" id="trabalhos" hidden>
+    <h2>Feito na Primícia</h2>
+    <p class="sec__lead">Peças e lotes que já saíram do ateliê. Toque em um trabalho para ver os detalhes.</p>
+    <p class="trab-contador" id="trab-contador" hidden></p>
+    <div class="opts opts--chip trab-filtros" id="trab-filtros" hidden></div>
+    <div class="trab-grade" id="trab-grade"></div>
+    <dialog class="trab-det" id="trab-det" aria-label="Detalhes do trabalho">
+      <button type="button" class="trab-det__fechar" id="trab-det-fechar" aria-label="Fechar">×</button>
+      <div id="trab-det-conteudo"></div>
+    </dialog>
   </section>
 
   <section class="sec" id="orcamento">
@@ -192,5 +205,7 @@
 
 <script src="assets/js/precos.js"></script>
 <script src="assets/js/orcamento.js"></script>
+<script src="assets/js/trabalhos.js"></script>
+<script src="assets/js/trabalhos-galeria.js"></script>
 </body>
 </html>
